@@ -1,0 +1,112 @@
+23-08-2018 11:54:53 - ################################################################
+23-08-2018 11:54:53 - Procesando ID Canal Movimineto :9DA48040-F5A6-E811-8109-00505686417C
+23-08-2018 11:54:53 - Actualiza estado de Canal Moviminetos 61 :9DA48040-F5A6-E811-8109-00505686417C
+23-08-2018 11:54:53 - Actualiza estado de Requerimineto 61 :403
+23-08-2018 11:54:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,760,0,0,amaxpoint,0,0,00])
+23-08-2018 11:55:08 - Respuesta obtenida: 02,      ,000000004000,000000000296,PRB00000  ,000000,000000,00000000,000000,0000,XX,VISA G    ,  ,00,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,61
+23-08-2018 11:55:08 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+23-08-2018 11:55:08 - si cumple longitud - Trama insertada mediante ejecución normal: 02,      ,000000004000,000000000296,PRB00000  ,000000,000000,00000000,000000,0000,XX,VISA G    ,  ,00,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,61
+23-08-2018 11:55:08 - Actualizar a estado 42 ID: 9DA48040-F5A6-E811-8109-00505686417C
+23-08-2018 12:01:46 - ################################################################
+23-08-2018 12:01:46 - Procesando ID Canal Movimineto :A2483E36-F6A6-E811-8109-00505686417C
+23-08-2018 12:01:46 - Actualiza estado de Canal Moviminetos 61 :A2483E36-F6A6-E811-8109-00505686417C
+23-08-2018 12:01:46 - Actualiza estado de Requerimineto 61 :404
+23-08-2018 12:01:46 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,761,0,0,amaxpoint,0,0,01])
+23-08-2018 12:01:46 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+23-08-2018 12:01:46 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+23-08-2018 12:01:46 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+23-08-2018 12:01:46 - Actualizar a estado 42 ID: A2483E36-F6A6-E811-8109-00505686417C
+23-08-2018 12:01:58 - ################################################################
+23-08-2018 12:01:58 - Procesando ID Canal Movimineto :0BD4FD3C-F6A6-E811-8109-00505686417C
+23-08-2018 12:01:58 - Actualiza estado de Canal Moviminetos 61 :0BD4FD3C-F6A6-E811-8109-00505686417C
+23-08-2018 12:01:58 - Actualiza estado de Requerimineto 61 :405
+23-08-2018 12:01:58 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,762,0,0,amaxpoint,0,0,02])
+23-08-2018 12:01:59 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+23-08-2018 12:01:59 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+23-08-2018 12:01:59 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+23-08-2018 12:01:59 - Actualizar a estado 42 ID: 0BD4FD3C-F6A6-E811-8109-00505686417C
+23-08-2018 12:02:11 - ################################################################
+23-08-2018 12:02:11 - Procesando ID Canal Movimineto :8EB96A44-F6A6-E811-8109-00505686417C
+23-08-2018 12:02:11 - Actualiza estado de Canal Moviminetos 61 :8EB96A44-F6A6-E811-8109-00505686417C
+23-08-2018 12:02:11 - Actualiza estado de Requerimineto 61 :406
+23-08-2018 12:02:11 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,763,0,0,amaxpoint,0,0,03])
+23-08-2018 12:02:39 - Respuesta obtenida: 00,287400,000000004000,000000000296,PRB00000  ,000172,000173,00018487,000823,1202,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,71
+23-08-2018 12:02:39 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+23-08-2018 12:02:39 - si cumple longitud - Trama insertada mediante ejecución normal: 00,287400,000000004000,000000000296,PRB00000  ,000172,000173,00018487,000823,1202,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,71
+23-08-2018 12:02:39 - Actualizar a estado 42 ID: 8EB96A44-F6A6-E811-8109-00505686417C
+23-08-2018 15:50:07 - ################################################################
+23-08-2018 15:50:08 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:50:10 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:50:31 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 15:51:43 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 15:52:57 - No se pudo encontrar la Clase com.credibanco.entidades.Envio com.credibanco.entidades.Envio
+23-08-2018 15:53:23 - Se obtubo un TIME_OUT esperando respuesta
+23-08-2018 15:53:23 - Actualizar a estado 42 ID: 72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:54:03 - ################################################################
+23-08-2018 15:54:03 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:54:03 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:54:03 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 15:54:48 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 15:54:50 - No se pudo encontrar la Clase com.credibanco.entidades.Envio com.credibanco.entidades.Envio
+23-08-2018 15:56:58 - ################################################################
+23-08-2018 15:56:58 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:56:58 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:56:58 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 15:57:08 - Secuencia Transaccion: obtieneClase(Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 15:59:18 - ################################################################
+23-08-2018 15:59:18 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:59:18 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 15:59:18 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 15:59:18 - Secuencia Transaccion: obtieneClase(Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:02:19 - ################################################################
+23-08-2018 16:02:19 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:02:19 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:02:19 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 16:02:23 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:03:51 - Respuesta obtenida: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:04:51 - [Mensaje de respuesta]  Codigo:  01, Mensaje:  ESTABLECIMIENTO NO AFILIADO banda magnetica ,   Secuencia:  INSERTAR 
+23-08-2018 16:05:17 - Se inserto trama (error controlado): 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:05:26 - Actualizar a estado 42 ID: 72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:22:15 - ################################################################
+23-08-2018 16:22:15 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:22:15 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:22:15 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 16:22:15 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:22:15 - Respuesta obtenida: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:23:22 - [Mensaje de respuesta]  Codigo:  01, Mensaje:  ESTABLECIMIENTO NO AFILIADO banda magnetica ,   Secuencia:  INSERTAR 
+23-08-2018 16:34:49 - ################################################################
+23-08-2018 16:34:49 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:34:49 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:34:49 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 16:34:49 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:34:49 - Respuesta obtenida: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:34:49 - [Mensaje de respuesta]  Codigo:  01, Mensaje:  ESTABLECIMIENTO NO AFILIADO banda magnetica ,   Secuencia:  INSERTAR 
+23-08-2018 16:34:49 - si cumple longitud - Trama insertada mediante ejecución normal: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:34:49 - Actualizar a estado 42 ID: 72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:49:45 - ################################################################
+23-08-2018 16:49:45 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:49:45 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:49:45 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 16:49:45 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:49:45 - Respuesta obtenida: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:49:45 - [Mensaje de respuesta]  Codigo:  01, Mensaje:  ESTABLECIMIENTO NO AFILIADO banda magnetica ,   Secuencia:  INSERTAR 
+23-08-2018 16:49:45 - si cumple longitud - Trama insertada mediante ejecución normal: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:49:45 - Actualizar a estado 42 ID: 72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:56:47 - ################################################################
+23-08-2018 16:56:47 - Procesando ID Canal Movimineto :1AA8B46C-1FA7-E811-8109-00505686417C
+23-08-2018 16:56:47 - Actualiza estado de Canal Moviminetos 61 :1AA8B46C-1FA7-E811-8109-00505686417C
+23-08-2018 16:56:47 - Actualiza estado de Requerimineto 61 :408
+23-08-2018 16:56:48 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,765,0,0,amaxpoint,0,0,05])
+23-08-2018 16:57:14 - Respuesta obtenida: 00,692921,000000004000,000000000296,PRB00000  ,000173,000174,00018487,000823,1657,00,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,68
+23-08-2018 16:57:14 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+23-08-2018 16:57:14 - si cumple longitud - Trama insertada mediante ejecución normal: 00,692921,000000004000,000000000296,PRB00000  ,000173,000174,00018487,000823,1657,00,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,68
+23-08-2018 16:57:14 - Actualizar a estado 42 ID: 1AA8B46C-1FA7-E811-8109-00505686417C
+23-08-2018 16:57:50 - ################################################################
+23-08-2018 16:57:50 - Procesando ID Canal Movimineto :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:57:50 - Actualiza estado de Canal Moviminetos 61 :72507304-12A7-E811-8109-00505686417C
+23-08-2018 16:57:50 - Actualiza estado de Requerimineto 61 :407
+23-08-2018 16:57:51 - Secuencia Transaccion: obtieneClase(com.credibanco.entidades.Envio)->ejecutaMetodo([0]>[]>Envio_requerimientoPinpad>[013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         ])
+23-08-2018 16:57:51 - Respuesta obtenida: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:57:51 - [Mensaje de respuesta]  Codigo:  01, Mensaje:  ESTABLECIMIENTO NO AFILIADO banda magnetica ,   Secuencia:  INSERTAR 
+23-08-2018 16:57:51 - si cumple longitud - Trama insertada mediante ejecución normal: 0103ESTAB NOAFILIADO    00019115270620160430      JVZ00000                                                                                                                                                                                                                                                       365420XXXXX820                  DANIEL LLERENA                          
+23-08-2018 16:57:51 - Actualizar a estado 42 ID: 72507304-12A7-E811-8109-00505686417C

@@ -1,0 +1,179 @@
+21-08-2018 09:43:05 - ################################################################
+21-08-2018 09:43:05 - Procesando ID Canal Movimineto :3B12EF32-50A5-E811-8109-00505686417C
+21-08-2018 09:43:05 - Actualiza estado de Canal Moviminetos 61 :3B12EF32-50A5-E811-8109-00505686417C
+21-08-2018 09:43:05 - Actualiza estado de Requerimineto 61 :342
+21-08-2018 09:43:17 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,713,0,0,amaxpoint,0,0,04])
+21-08-2018 09:43:17 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 09:43:53 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 09:43:53 - ################################################################
+21-08-2018 09:43:53 - Procesando ID Canal Movimineto :E621A353-50A5-E811-8109-00505686417C
+21-08-2018 09:43:53 - Actualiza estado de Canal Moviminetos 61 :E621A353-50A5-E811-8109-00505686417C
+21-08-2018 09:43:53 - Actualiza estado de Requerimineto 61 :343
+21-08-2018 09:43:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,714,0,0,amaxpoint,0,0,03])
+21-08-2018 09:43:53 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 09:43:53 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 09:43:53 - ################################################################
+21-08-2018 09:43:53 - Procesando ID Canal Movimineto :E721A353-50A5-E811-8109-00505686417C
+21-08-2018 09:43:53 - Actualiza estado de Canal Moviminetos 61 :E721A353-50A5-E811-8109-00505686417C
+21-08-2018 09:43:53 - Actualiza estado de Requerimineto 61 :344
+21-08-2018 09:43:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,715,0,0,amaxpoint,0,0,02])
+21-08-2018 09:43:53 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 09:43:53 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 09:44:23 - ################################################################
+21-08-2018 09:44:23 - Procesando ID Canal Movimineto :44EFDFAF-50A5-E811-8109-00505686417C
+21-08-2018 09:44:23 - Actualiza estado de Canal Moviminetos 61 :44EFDFAF-50A5-E811-8109-00505686417C
+21-08-2018 09:44:23 - Actualiza estado de Requerimineto 61 :345
+21-08-2018 09:45:26 - ################################################################
+21-08-2018 09:45:26 - Procesando ID Canal Movimineto :B0D801D6-50A5-E811-8109-00505686417C
+21-08-2018 09:45:26 - Actualiza estado de Canal Moviminetos 61 :B0D801D6-50A5-E811-8109-00505686417C
+21-08-2018 09:45:26 - Actualiza estado de Requerimineto 61 :346
+21-08-2018 09:45:26 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,717,0,0,amaxpoint,0,0,00])
+21-08-2018 09:45:26 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 09:45:26 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 10:04:52 - ################################################################
+21-08-2018 10:04:52 - Procesando ID Canal Movimineto :15AE0A8C-53A5-E811-8109-00505686417C
+21-08-2018 10:04:52 - Actualiza estado de Canal Moviminetos 61 :15AE0A8C-53A5-E811-8109-00505686417C
+21-08-2018 10:04:52 - Actualiza estado de Requerimineto 61 :347
+21-08-2018 10:04:52 - Actualizar a estado 42 ID: 15AE0A8C-53A5-E811-8109-00505686417C
+21-08-2018 10:09:00 - ################################################################
+21-08-2018 10:09:00 - Procesando ID Canal Movimineto :5483D920-54A5-E811-8109-00505686417C
+21-08-2018 10:09:00 - Actualiza estado de Canal Moviminetos 61 :5483D920-54A5-E811-8109-00505686417C
+21-08-2018 10:09:00 - Actualiza estado de Requerimineto 61 :348
+21-08-2018 10:09:00 - Actualizar a estado 42 ID: 5483D920-54A5-E811-8109-00505686417C
+21-08-2018 10:09:28 - ################################################################
+21-08-2018 10:09:28 - Procesando ID Canal Movimineto :441A7530-54A5-E811-8109-00505686417C
+21-08-2018 10:09:28 - Actualiza estado de Canal Moviminetos 61 :441A7530-54A5-E811-8109-00505686417C
+21-08-2018 10:09:28 - Actualiza estado de Requerimineto 61 :349
+21-08-2018 10:09:28 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,48900,3622,PRB00000,720,0,0,jfernandez,0,0,75])
+21-08-2018 10:09:28 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 10:09:28 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 10:09:55 - ################################################################
+21-08-2018 10:09:55 - Procesando ID Canal Movimineto :821E2342-54A5-E811-8109-00505686417C
+21-08-2018 10:09:55 - Actualiza estado de Canal Moviminetos 61 :821E2342-54A5-E811-8109-00505686417C
+21-08-2018 10:09:55 - Actualiza estado de Requerimineto 61 :350
+21-08-2018 10:09:55 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,48900,3622,PRB00000,721,0,0,jfernandez,0,0,74])
+21-08-2018 10:09:55 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 10:09:55 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 10:10:31 - ################################################################
+21-08-2018 10:10:31 - Procesando ID Canal Movimineto :C6997257-54A5-E811-8109-00505686417C
+21-08-2018 10:10:31 - Actualiza estado de Canal Moviminetos 61 :C6997257-54A5-E811-8109-00505686417C
+21-08-2018 10:10:31 - Actualiza estado de Requerimineto 61 :351
+21-08-2018 10:10:31 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,722,0,0,amaxpoint,0,0,06])
+21-08-2018 10:10:31 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 10:10:31 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 10:10:45 - ################################################################
+21-08-2018 10:10:45 - Procesando ID Canal Movimineto :5FE73A5F-54A5-E811-8109-00505686417C
+21-08-2018 10:10:45 - Actualiza estado de Canal Moviminetos 61 :5FE73A5F-54A5-E811-8109-00505686417C
+21-08-2018 10:10:45 - Actualiza estado de Requerimineto 61 :352
+21-08-2018 10:10:45 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,723,0,0,amaxpoint,0,0,07])
+21-08-2018 10:10:45 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 10:10:45 - ------------Exception:  Cannot invoke method newInstance() on null object
+21-08-2018 10:11:56 - ################################################################
+21-08-2018 10:11:56 - Procesando ID Canal Movimineto :A986D489-54A5-E811-8109-00505686417C
+21-08-2018 10:11:56 - Actualiza estado de Canal Moviminetos 61 :A986D489-54A5-E811-8109-00505686417C
+21-08-2018 10:11:56 - Actualiza estado de Requerimineto 61 :353
+21-08-2018 10:12:22 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,724,0,0,amaxpoint,0,0,00])
+21-08-2018 10:13:19 - No se pudo encontrar la Clase com.credibanco.tef.controller.param.TefParameters com.credibanco.tef.controller.param.TefParameters
+21-08-2018 10:14:45 - ################################################################
+21-08-2018 10:14:45 - Procesando ID Canal Movimineto :323E41EE-54A5-E811-8109-00505686417C
+21-08-2018 10:14:45 - Actualiza estado de Canal Moviminetos 61 :323E41EE-54A5-E811-8109-00505686417C
+21-08-2018 10:14:45 - Actualiza estado de Requerimineto 61 :354
+21-08-2018 10:14:45 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,725,0,0,amaxpoint,0,0,01])
+21-08-2018 10:14:54 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+21-08-2018 10:14:54 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+21-08-2018 10:14:54 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+21-08-2018 10:14:54 - Actualizar a estado 42 ID: 323E41EE-54A5-E811-8109-00505686417C
+21-08-2018 10:15:38 - ################################################################
+21-08-2018 10:15:38 - Procesando ID Canal Movimineto :8E474F0E-55A5-E811-8109-00505686417C
+21-08-2018 10:15:38 - Actualiza estado de Canal Moviminetos 61 :8E474F0E-55A5-E811-8109-00505686417C
+21-08-2018 10:15:38 - Actualiza estado de Requerimineto 61 :355
+21-08-2018 10:15:38 - Actualizar a estado 42 ID: 8E474F0E-55A5-E811-8109-00505686417C
+21-08-2018 10:15:44 - ################################################################
+21-08-2018 10:15:44 - Procesando ID Canal Movimineto :8F474F0E-55A5-E811-8109-00505686417C
+21-08-2018 10:15:44 - Actualiza estado de Canal Moviminetos 61 :8F474F0E-55A5-E811-8109-00505686417C
+21-08-2018 10:15:44 - Actualiza estado de Requerimineto 61 :356
+21-08-2018 10:15:44 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,727,0,0,amaxpoint,0,0,03])
+21-08-2018 10:15:49 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+21-08-2018 10:15:49 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+21-08-2018 10:15:50 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+21-08-2018 10:15:50 - Actualizar a estado 42 ID: 8F474F0E-55A5-E811-8109-00505686417C
+21-08-2018 12:24:00 - ################################################################
+21-08-2018 12:24:00 - Procesando ID Canal Movimineto :8ABC2CFC-66A5-E811-8109-00505686417C
+21-08-2018 12:24:00 - Actualiza estado de Canal Moviminetos 61 :8ABC2CFC-66A5-E811-8109-00505686417C
+21-08-2018 12:24:00 - Actualiza estado de Requerimineto 61 :357
+21-08-2018 12:24:02 - Actualizar a estado 42 ID: 8ABC2CFC-66A5-E811-8109-00505686417C
+21-08-2018 12:24:23 - ################################################################
+21-08-2018 12:24:23 - Procesando ID Canal Movimineto :02671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:23 - Actualiza estado de Canal Moviminetos 61 :02671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:23 - Actualiza estado de Requerimineto 61 :358
+21-08-2018 12:24:23 - Actualizar a estado 42 ID: 02671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:32 - ################################################################
+21-08-2018 12:24:32 - Procesando ID Canal Movimineto :03671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:32 - Actualiza estado de Canal Moviminetos 61 :03671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:32 - Actualiza estado de Requerimineto 61 :359
+21-08-2018 12:24:32 - Actualizar a estado 42 ID: 03671F0B-67A5-E811-8109-00505686417C
+21-08-2018 12:24:59 - ################################################################
+21-08-2018 12:24:59 - Procesando ID Canal Movimineto :C3482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:24:59 - Actualiza estado de Canal Moviminetos 61 :C3482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:24:59 - Actualiza estado de Requerimineto 61 :360
+21-08-2018 12:24:59 - Actualizar a estado 42 ID: C3482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:25:09 - ################################################################
+21-08-2018 12:25:09 - Procesando ID Canal Movimineto :C4482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:25:09 - Actualiza estado de Canal Moviminetos 61 :C4482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:25:09 - Actualiza estado de Requerimineto 61 :361
+21-08-2018 12:25:09 - Actualizar a estado 42 ID: C4482B20-67A5-E811-8109-00505686417C
+21-08-2018 12:25:15 - ################################################################
+21-08-2018 12:25:15 - Procesando ID Canal Movimineto :747D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:15 - Actualiza estado de Canal Moviminetos 61 :747D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:15 - Actualiza estado de Requerimineto 61 :362
+21-08-2018 12:25:15 - Actualizar a estado 42 ID: 747D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:21 - ################################################################
+21-08-2018 12:25:21 - Procesando ID Canal Movimineto :757D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:21 - Actualiza estado de Canal Moviminetos 61 :757D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:21 - Actualiza estado de Requerimineto 61 :363
+21-08-2018 12:25:21 - Actualizar a estado 42 ID: 757D2229-67A5-E811-8109-00505686417C
+21-08-2018 12:25:27 - ################################################################
+21-08-2018 12:25:27 - Procesando ID Canal Movimineto :E6802C30-67A5-E811-8109-00505686417C
+21-08-2018 12:25:27 - Actualiza estado de Canal Moviminetos 61 :E6802C30-67A5-E811-8109-00505686417C
+21-08-2018 12:25:27 - Actualiza estado de Requerimineto 61 :364
+21-08-2018 12:25:27 - Actualizar a estado 42 ID: E6802C30-67A5-E811-8109-00505686417C
+21-08-2018 12:27:06 - ################################################################
+21-08-2018 12:27:06 - Procesando ID Canal Movimineto :EEEE5052-67A5-E811-8109-00505686417C
+21-08-2018 12:27:06 - Actualiza estado de Canal Moviminetos 61 :EEEE5052-67A5-E811-8109-00505686417C
+21-08-2018 12:27:06 - Actualiza estado de Requerimineto 61 :365
+21-08-2018 12:27:06 - Actualizar a estado 42 ID: EEEE5052-67A5-E811-8109-00505686417C
+21-08-2018 12:28:57 - ################################################################
+21-08-2018 12:28:57 - Procesando ID Canal Movimineto :D71E32AD-67A5-E811-8109-00505686417C
+21-08-2018 12:28:57 - Actualiza estado de Canal Moviminetos 61 :D71E32AD-67A5-E811-8109-00505686417C
+21-08-2018 12:28:57 - Actualiza estado de Requerimineto 61 :366
+21-08-2018 12:28:57 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,31900,2363,PRB00000,737,0,0,jfernandez,0,0,7C])
+21-08-2018 12:30:04 - Respuesta obtenida: 05,,000000031900,000000002363,PRB00000  ,,,,,,,,,,,,,,,,,,7a
+21-08-2018 12:30:05 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+21-08-2018 12:30:05 - Se auto completo la trama: 05,      ,000000031900,000000002363,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7a
+21-08-2018 12:30:05 - Actualizar a estado 42 ID: D71E32AD-67A5-E811-8109-00505686417C
+21-08-2018 12:32:26 - ################################################################
+21-08-2018 12:32:26 - Procesando ID Canal Movimineto :6164722B-68A5-E811-8109-00505686417C
+21-08-2018 12:32:27 - Actualiza estado de Canal Moviminetos 61 :6164722B-68A5-E811-8109-00505686417C
+21-08-2018 12:32:27 - Actualiza estado de Requerimineto 61 :367
+21-08-2018 12:32:27 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,31900,2363,PRB00000,738,0,0,jfernandez,0,0,73])
+21-08-2018 12:32:59 - Respuesta obtenida: 00,406945,000000031900,000000002363,PRB00000  ,000166,000167,00018487,000821,1232,00,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,60
+21-08-2018 12:32:59 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+21-08-2018 12:32:59 - si cumple longitud - Trama insertada mediante ejecución normal: 00,406945,000000031900,000000002363,PRB00000  ,000166,000167,00018487,000821,1232,00,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,60
+21-08-2018 12:32:59 - Actualizar a estado 42 ID: 6164722B-68A5-E811-8109-00505686417C
+21-08-2018 12:47:20 - ################################################################
+21-08-2018 12:47:20 - Procesando ID Canal Movimineto :E7196B3F-6AA5-E811-8109-00505686417C
+21-08-2018 12:47:20 - Actualiza estado de Canal Moviminetos 61 :E7196B3F-6AA5-E811-8109-00505686417C
+21-08-2018 12:47:20 - Actualiza estado de Requerimineto 61 :368
+21-08-2018 12:47:20 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,1000,74,PRB00000,739,0,0,jfernandez,0,0,4F])
+21-08-2018 12:47:38 - Respuesta obtenida: 02,      ,000000001000,000000000074,PRB00000  ,000000,000000,00000000,000000,0000,05,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,6a
+21-08-2018 12:47:38 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+21-08-2018 12:47:38 - si cumple longitud - Trama insertada mediante ejecución normal: 02,      ,000000001000,000000000074,PRB00000  ,000000,000000,00000000,000000,0000,05,VISA G    ,EL,00,4754,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,6a
+21-08-2018 12:47:38 - Actualizar a estado 42 ID: E7196B3F-6AA5-E811-8109-00505686417C
+21-08-2018 13:15:44 - ################################################################
+21-08-2018 13:15:44 - Procesando ID Canal Movimineto :8EB79435-6EA5-E811-8109-00505686417C
+21-08-2018 13:15:44 - Actualiza estado de Canal Moviminetos 61 :8EB79435-6EA5-E811-8109-00505686417C
+21-08-2018 13:15:44 - Actualiza estado de Requerimineto 61 :369
+21-08-2018 13:16:26 - ################################################################
+21-08-2018 13:16:26 - Procesando ID Canal Movimineto :9F92BD4F-6EA5-E811-8109-00505686417C
+21-08-2018 13:16:26 - Actualiza estado de Canal Moviminetos 61 :9F92BD4F-6EA5-E811-8109-00505686417C
+21-08-2018 13:16:26 - Actualiza estado de Requerimineto 61 :370

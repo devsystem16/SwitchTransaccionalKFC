@@ -1,0 +1,141 @@
+15-08-2018 09:31:38 - ################################################################
+15-08-2018 09:31:38 - Procesando ID Canal Movimineto :C649F9E8-97A0-E811-8109-00505686417C
+15-08-2018 09:31:38 - Actualiza estado de Canal Moviminetos 61 :C649F9E8-97A0-E811-8109-00505686417C
+15-08-2018 09:31:38 - Actualiza estado de Requerimineto 61 :205
+15-08-2018 09:31:39 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,573,0,0,amaxpoint,0,0,00])
+15-08-2018 09:33:06 - ################################################################
+15-08-2018 09:33:06 - Procesando ID Canal Movimineto :062F901E-98A0-E811-8109-00505686417C
+15-08-2018 09:33:06 - Actualiza estado de Canal Moviminetos 61 :062F901E-98A0-E811-8109-00505686417C
+15-08-2018 09:33:06 - Actualiza estado de Requerimineto 61 :206
+15-08-2018 09:33:06 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,574,0,0,amaxpoint,0,0,07])
+15-08-2018 09:36:58 - ################################################################
+15-08-2018 09:36:58 - Procesando ID Canal Movimineto :F12E2CA8-98A0-E811-8109-00505686417C
+15-08-2018 09:36:58 - Actualiza estado de Canal Moviminetos 61 :F12E2CA8-98A0-E811-8109-00505686417C
+15-08-2018 09:36:58 - Actualiza estado de Requerimineto 61 :207
+15-08-2018 09:36:58 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,575,0,0,amaxpoint,0,0,06])
+15-08-2018 09:37:30 - ################################################################
+15-08-2018 09:37:30 - Procesando ID Canal Movimineto :E4B160BB-98A0-E811-8109-00505686417C
+15-08-2018 09:37:30 - Actualiza estado de Canal Moviminetos 61 :E4B160BB-98A0-E811-8109-00505686417C
+15-08-2018 09:37:31 - Actualiza estado de Requerimineto 61 :208
+15-08-2018 09:37:31 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,576,0,0,amaxpoint,0,0,05])
+15-08-2018 09:37:50 - ################################################################
+15-08-2018 09:37:50 - Procesando ID Canal Movimineto :703C09C8-98A0-E811-8109-00505686417C
+15-08-2018 09:37:50 - Actualiza estado de Canal Moviminetos 61 :703C09C8-98A0-E811-8109-00505686417C
+15-08-2018 09:37:50 - Actualiza estado de Requerimineto 61 :209
+15-08-2018 09:37:50 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,577,0,0,amaxpoint,0,0,04])
+15-08-2018 09:38:39 - ################################################################
+15-08-2018 09:38:39 - Procesando ID Canal Movimineto :6358F9E4-98A0-E811-8109-00505686417C
+15-08-2018 09:38:39 - Actualiza estado de Canal Moviminetos 61 :6358F9E4-98A0-E811-8109-00505686417C
+15-08-2018 09:38:39 - Actualiza estado de Requerimineto 61 :210
+15-08-2018 09:38:39 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,578,0,0,amaxpoint,0,0,0B])
+15-08-2018 09:38:56 - ################################################################
+15-08-2018 09:38:56 - Procesando ID Canal Movimineto :72417EED-98A0-E811-8109-00505686417C
+15-08-2018 09:38:56 - Actualiza estado de Canal Moviminetos 61 :72417EED-98A0-E811-8109-00505686417C
+15-08-2018 09:38:56 - Actualiza estado de Requerimineto 61 :211
+15-08-2018 09:38:56 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,579,0,0,amaxpoint,0,0,0A])
+15-08-2018 09:41:23 - ################################################################
+15-08-2018 09:41:23 - Procesando ID Canal Movimineto :53ABBB41-99A0-E811-8109-00505686417C
+15-08-2018 09:41:23 - Actualiza estado de Canal Moviminetos 61 :53ABBB41-99A0-E811-8109-00505686417C
+15-08-2018 09:41:23 - Actualiza estado de Requerimineto 61 :212
+15-08-2018 09:41:23 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,580,0,0,amaxpoint,0,0,0C])
+15-08-2018 09:41:24 - Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 09:42:20 - ################################################################
+15-08-2018 09:42:20 - Procesando ID Canal Movimineto :E2EE7E69-99A0-E811-8109-00505686417C
+15-08-2018 09:42:20 - Actualiza estado de Canal Moviminetos 61 :E2EE7E69-99A0-E811-8109-00505686417C
+15-08-2018 09:42:20 - Actualiza estado de Requerimineto 61 :213
+15-08-2018 09:42:20 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,581,0,0,amaxpoint,0,0,0D])
+15-08-2018 09:42:21 - #########################
+Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 09:43:35 - ################################################################
+15-08-2018 09:43:35 - Procesando ID Canal Movimineto :2051B990-99A0-E811-8109-00505686417C
+15-08-2018 09:43:35 - Actualiza estado de Canal Moviminetos 61 :2051B990-99A0-E811-8109-00505686417C
+15-08-2018 09:43:35 - Actualiza estado de Requerimineto 61 :214
+15-08-2018 09:43:35 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,582,0,0,amaxpoint,0,0,0E])
+15-08-2018 09:43:35 - ------------Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 09:58:02 - ################################################################
+15-08-2018 09:58:02 - Procesando ID Canal Movimineto :7B188B99-9BA0-E811-8109-00505686417C
+15-08-2018 09:58:02 - Actualiza estado de Canal Moviminetos 61 :7B188B99-9BA0-E811-8109-00505686417C
+15-08-2018 09:58:02 - Actualiza estado de Requerimineto 61 :215
+15-08-2018 09:58:02 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,583,0,0,amaxpoint,0,0,0F])
+15-08-2018 09:58:03 - ------------Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 10:04:43 - ################################################################
+15-08-2018 10:04:43 - Procesando ID Canal Movimineto :E9CA2389-9CA0-E811-8109-00505686417C
+15-08-2018 10:04:43 - Actualiza estado de Canal Moviminetos 61 :E9CA2389-9CA0-E811-8109-00505686417C
+15-08-2018 10:04:43 - Actualiza estado de Requerimineto 61 :216
+15-08-2018 10:04:43 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,585,0,0,amaxpoint,0,0,09])
+15-08-2018 10:04:44 - ------------Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 10:07:40 - ################################################################
+15-08-2018 10:07:40 - Procesando ID Canal Movimineto :48BDF7F1-9CA0-E811-8109-00505686417C
+15-08-2018 10:07:40 - Actualiza estado de Canal Moviminetos 61 :48BDF7F1-9CA0-E811-8109-00505686417C
+15-08-2018 10:07:40 - Actualiza estado de Requerimineto 61 :217
+15-08-2018 10:07:40 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,586,0,0,amaxpoint,0,0,0A])
+15-08-2018 10:07:40 - ------------Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 10:14:07 - ################################################################
+15-08-2018 10:14:07 - Procesando ID Canal Movimineto :07841DD6-9DA0-E811-8109-00505686417C
+15-08-2018 10:14:07 - Actualiza estado de Canal Moviminetos 61 :07841DD6-9DA0-E811-8109-00505686417C
+15-08-2018 10:14:07 - Actualiza estado de Requerimineto 61 :218
+15-08-2018 10:14:07 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,587,0,0,amaxpoint,0,0,0B])
+15-08-2018 10:15:43 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:15:43 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:15:43 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:15:43 - Actualizar a estado 42 ID: 07841DD6-9DA0-E811-8109-00505686417C
+15-08-2018 10:17:11 - ################################################################
+15-08-2018 10:17:11 - Procesando ID Canal Movimineto :96D13C46-9EA0-E811-8109-00505686417C
+15-08-2018 10:17:11 - Actualiza estado de Canal Moviminetos 61 :96D13C46-9EA0-E811-8109-00505686417C
+15-08-2018 10:17:11 - Actualiza estado de Requerimineto 61 :219
+15-08-2018 10:17:11 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,588,0,0,amaxpoint,0,0,04])
+15-08-2018 10:17:11 - ------------Exception:  java.lang.InstantiationException: gnu.io.NoSuchPortException: null
+15-08-2018 10:18:17 - ################################################################
+15-08-2018 10:18:17 - Procesando ID Canal Movimineto :7B1BE96D-9EA0-E811-8109-00505686417C
+15-08-2018 10:18:17 - Actualiza estado de Canal Moviminetos 61 :7B1BE96D-9EA0-E811-8109-00505686417C
+15-08-2018 10:18:17 - Actualiza estado de Requerimineto 61 :220
+15-08-2018 10:18:17 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,589,0,0,amaxpoint,0,0,05])
+15-08-2018 10:18:18 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:18:19 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:18:19 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:18:19 - Actualizar a estado 42 ID: 7B1BE96D-9EA0-E811-8109-00505686417C
+15-08-2018 10:18:47 - ################################################################
+15-08-2018 10:18:47 - Procesando ID Canal Movimineto :697E3A80-9EA0-E811-8109-00505686417C
+15-08-2018 10:18:47 - Actualiza estado de Canal Moviminetos 61 :697E3A80-9EA0-E811-8109-00505686417C
+15-08-2018 10:18:47 - Actualiza estado de Requerimineto 61 :221
+15-08-2018 10:18:47 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,590,0,0,amaxpoint,0,0,0D])
+15-08-2018 10:19:02 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:19:02 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:19:02 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:19:02 - Actualizar a estado 42 ID: 697E3A80-9EA0-E811-8109-00505686417C
+15-08-2018 10:19:11 - ################################################################
+15-08-2018 10:19:11 - Procesando ID Canal Movimineto :C273A88D-9EA0-E811-8109-00505686417C
+15-08-2018 10:19:11 - Actualiza estado de Canal Moviminetos 61 :C273A88D-9EA0-E811-8109-00505686417C
+15-08-2018 10:19:11 - Actualiza estado de Requerimineto 61 :222
+15-08-2018 10:19:11 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,591,0,0,amaxpoint,0,0,0C])
+15-08-2018 10:20:50 - Respuesta obtenida: 03,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7a
+15-08-2018 10:20:50 - [Mensaje de respuesta]  Codigo:  03, Mensaje:  Transaccion sin respuesta final del datafono DATAFONO ,   Secuencia:  insertar 
+15-08-2018 10:20:50 - Se auto completo la trama: 03,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7a
+15-08-2018 10:20:50 - Actualizar a estado 42 ID: C273A88D-9EA0-E811-8109-00505686417C
+15-08-2018 10:38:07 - ################################################################
+15-08-2018 10:38:08 - Procesando ID Canal Movimineto :542BB633-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:08 - Actualiza estado de Canal Moviminetos 61 :542BB633-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:08 - Actualiza estado de Requerimineto 61 :223
+15-08-2018 10:38:08 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,592,0,0,amaxpoint,0,0,0F])
+15-08-2018 10:38:17 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:38:17 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:38:17 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:38:17 - Actualizar a estado 42 ID: 542BB633-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:38 - ################################################################
+15-08-2018 10:38:38 - Procesando ID Canal Movimineto :7998EB46-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:38 - Actualiza estado de Canal Moviminetos 61 :7998EB46-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:38 - Actualiza estado de Requerimineto 61 :224
+15-08-2018 10:38:38 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,593,0,0,amaxpoint,0,0,0E])
+15-08-2018 10:38:49 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:38:49 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:38:49 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:38:49 - Actualizar a estado 42 ID: 7998EB46-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:55 - ################################################################
+15-08-2018 10:38:55 - Procesando ID Canal Movimineto :8D8F6750-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:55 - Actualiza estado de Canal Moviminetos 61 :8D8F6750-A1A0-E811-8109-00505686417C
+15-08-2018 10:38:55 - Actualiza estado de Requerimineto 61 :225
+15-08-2018 10:38:55 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,296,PRB00000,594,0,0,amaxpoint,0,0,09])
+15-08-2018 10:39:24 - Respuesta obtenida: 05,,000000004000,000000000296,PRB00000  ,,,,,,,,,,,,,,,,,,7c
+15-08-2018 10:39:24 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  insertar 
+15-08-2018 10:39:24 - Se auto completo la trama: 05,      ,000000004000,000000000296,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,7c
+15-08-2018 10:39:24 - Actualizar a estado 42 ID: 8D8F6750-A1A0-E811-8109-00505686417C

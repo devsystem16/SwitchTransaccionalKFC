@@ -6,6 +6,7 @@ import java.sql.PreparedStatement
 import java.sql.ResultSet
 import java.sql.Statement
 import kfc.com.modelo.ArchivoProperties
+import kfc.com.modelo.Constantes
 import kfc.com.modelo.Propiedades
 
 class ConexionSqlServer {
@@ -31,9 +32,9 @@ class ConexionSqlServer {
 	}
 
 	void abrirConexion() throws Throwable {
-		urlConexion = "jdbc:sqlserver:"+Propiedades.get("Application",  "conexion.servidor")+";databaseName="+Propiedades.get("Application",  "conexion.base_datos")
-		usuario=Propiedades.get("Application",  "conexion.usuario")
-		clave =Propiedades.get("Application",  "conexion.passw")
+		urlConexion = "jdbc:sqlserver:"+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.servidor")+";databaseName="+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.base_datos")
+		usuario=Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.usuario")
+		clave =Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.passw")
 
 		lConexion = DriverManager.getConnection(urlConexion + ";user=" +usuario+ ";password="+clave+";" )
 	}

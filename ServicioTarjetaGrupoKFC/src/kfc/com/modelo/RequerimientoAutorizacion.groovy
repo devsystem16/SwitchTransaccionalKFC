@@ -40,7 +40,7 @@ class RequerimientoAutorizacion {
 
 		Object [] params = [cola.imp_ip_estacion, Fecha.actual()]
 
-		ResultSet odr  = ocnn.select( Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC, "query.RequerimientoPendientes"),params)
+		ResultSet odr  = ocnn.select( Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "query.RequerimientoPendientes"),params)
 
 		if (odr != null) {
 			if (odr.next()) {
@@ -100,12 +100,12 @@ class RequerimientoAutorizacion {
 
 	void actualizarEstado () {
 		Object [] prm =  [this.rqaut_id , this.rqaut_ip]
-		int registros = ocnn.update( Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "query.update_req_aut"), prm)
+		int registros = ocnn.update( Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.update_req_aut"), prm)
 		println "Actualiza estado de Requerimineto 61 cod: ${rqaut_id}"
 	}
 	void actualizarEstadoProcesado () {
 		Object [] prm =  [this.rqaut_id , this.rqaut_ip]
-		int registros = ocnn.update( Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "query.update_req_aut_process"), prm)
+		int registros = ocnn.update( Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.update_req_aut_process"), prm)
 		println "Actualiza estado de Requerimineto 42 cod: ${rqaut_id}"
 	}
 	void cargarCatalogo () {

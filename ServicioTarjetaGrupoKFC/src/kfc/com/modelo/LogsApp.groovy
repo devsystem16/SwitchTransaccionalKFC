@@ -36,7 +36,7 @@ class LogsApp {
 		SFecha=formatter.format(fechalocal);
 
 
-		Ruta= Constantes.RUTA_ARCHIVOS + "\\logsTarjetas"
+		Ruta= Constantes.RUTA_ARCHIVOS + "${Constantes.backslas}logsTarjetas"
 
 		File carpeta = new File (Ruta)
 		if (!carpeta.exists()) {
@@ -44,7 +44,7 @@ class LogsApp {
 		}
 		carpeta = null 
 
-		FileName=Ruta+"\\LogEventos"+SFecha+".log";
+		FileName=Ruta+"${Constantes.backslas}LogEventos"+SFecha+".log";
 		SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
 		try{

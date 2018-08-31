@@ -21,6 +21,9 @@ class Respuesta_Autorizacion {
 	ArrayList<MensajesRespuestas> ListadomensajesRespuesta
 	String [] posicionRepsuesta
 	MensajesRespuestas mensajeRespuesta
+	
+	boolean respuestatipoObjeto = false
+	
 	private static Respuesta_Autorizacion instance
 
 	static  Respuesta_Autorizacion getInstancia( ){
@@ -29,12 +32,12 @@ class Respuesta_Autorizacion {
 		instance
 	}
 
-	void cargarCatalogo () {
+	void cargarCatalogo (String tipo) {
 
 		String trama =  requerimiento.rqaut_trama
 		// Determino el tipo de trama (compra, anulacion, recuperaTransaccion)
 		String tipoTrama = trama.substring(trama.lastIndexOf("@")+1, trama.length())
-		String jsonString = Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "JAR.${tipoTrama.toUpperCase()}.${requerimiento.medioAutorizador.toUpperCase()}.CATALOGO.RESPUESTA")
+		String jsonString = Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "JAR.${tipoTrama.toUpperCase()}.${requerimiento.medioAutorizador.toUpperCase()}.CATALOGO.${tipo}")
 
 
 		JSONObject jsonObject = new JSONObject(jsonString);
@@ -58,7 +61,18 @@ class Respuesta_Autorizacion {
 				e.printStackTrace()
 			}
 		}
-		 
+
+		if (tipo.equals("ENVIO")) {
+			String caracterSeparador  = requerimiento.caracterSeparador
+			if ( caracterSeparador.equals("")) {
+				caracterSeparador ="->"
+			}
+			Object [] values  = requerimiento.rqaut_trama.split(caracterSeparador)
+			for	(int i=0 ; i < catalogo.size() ; i++ ) {
+				catalogo[i].values = values[i]
+			}
+		}
+
 	}
 
 	public boolean completarTramaSegunCatalogo (String trama) {
@@ -123,12 +137,30 @@ class Respuesta_Autorizacion {
 		println  "Query::::.   ${SqlQuery} ${param} ${values}"
 		ocnn.insert("${SqlQuery} ${param} ${values}")
 	}
- 
+
 	String getEstadoSegunSecuencia (MensajesRespuestas mns) {
 		mns.secuencia.toString().toUpperCase().equals("APROBADA") ? "APROBADA":"NO APROBADO"
 	}
+
 	
-	
+	public void  InsertarObjetoRespuestaAutorizacion () {
+		// Generar el Insert segun la configuracion del catalogo.
+		String SqlQuery  = "INSERT INTO SWT_Respuesta_Autorizacion"
+		String param ="(rsaut_trama,rsaut_movimiento,raut_observacion,rsaut_fecha,IDStatus,SWT_Respuesta_AutorizacionVarchar1,"
+		String values ="VALUES ('${this.tramaRespuesta}','${requerimiento.rqaut_movimiento}', '${mensajeRespuesta.mensaje}',GETDATE(), ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_OK},'${getEstadoSegunSecuencia(mensajeRespuesta)}',"
+		for (Catalogo c  : catalogo) {
+			if (!c.tabla.equals("indefinido")) {
+				param = param +  " ${c.campo},"
+				values =values+  "'${c.values}',"
+			}
+		}
+		param = param.substring(0 , param.length()-1) + ")"
+		values = values.substring(0 , values.length()-1) + ")"
+
+		println "${SqlQuery} ${param} ${values}"
+		ocnn.insert("${SqlQuery} ${param} ${values}")
+	}
+
 	public void  InsertarTramaRespuestaAutorizacion () {
 
 		String tramaR = tramaRespuesta
@@ -182,7 +214,7 @@ class Respuesta_Autorizacion {
 		ListadomensajesRespuesta = new ArrayList<MensajesRespuestas>();
 		try {
 			Object [] params  = [requerimiento.tpenv_id]
-			ResultSet odr =	 ocnn.selectSQL(Propiedades.get("Application",  "query.obtenerMensajesRespuesta"),params )
+			ResultSet odr =	 ocnn.selectSQL(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.obtenerMensajesRespuesta"),params )
 			if (odr != null) {
 				while (odr.next()) {
 					ListadomensajesRespuesta.add( new MensajesRespuestas(odr.getString("codigo"), odr.getString("mensaje"), odr.getString("secuencia")))
@@ -197,15 +229,15 @@ class Respuesta_Autorizacion {
 	}
 
 	void procesarRespuestaSwitch (String TramaRespuesta) {
-
-		cargarCatalogo()
-
+ 
+		cargarCatalogo("RESPUESTA")
+ 
 		// Obtener los codigos de respuesta configurados de las tramas 00=ok;  01=error; 0? = etc.
 		this.tramaRespuesta = TramaRespuesta
 		obtenerMensajesRespuesta()
 
 		String codigoRespuesta = this.tramaRespuesta.toString().substring(Integer.parseInt( posicionRepsuesta[0]), Integer.parseInt( posicionRepsuesta[1]))
- 
+
 		mensajeRespuesta =  MensajesRespuestas.getInstancia()
 		for (mr in ListadomensajesRespuesta) {
 			if (mr.codigo.equals(codigoRespuesta)) {
@@ -289,67 +321,67 @@ class Respuesta_Autorizacion {
 
 			String jar =Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "jar.ruta")
 			JarLector j = JarLector.getInstancia(jar.split("->"))
-			
-			
+
+
 			String NextramaRespuesta =""
-			
-						   final Duration timeout = Duration.ofSeconds( requerimiento.getTimeOut() )
-						   ExecutorService executor = Executors.newSingleThreadExecutor()
-		   
-						   final Future<String> handler = executor.submit(new Callable() {
-									   @Override
-									   public String call() throws Exception {
-										   return j.executeMetodoSecuencia(secuencia)
-									   }
-								   })
-						   try {
-							   NextramaRespuesta=handler.get(timeout.toMillis(), TimeUnit.MILLISECONDS)
-						   } catch (TimeoutException e) {
-							   println e.getMessage()
-							   TIME_OUT = true
-							   handler.cancel(true)
-						   }
-						   executor.shutdown()
-			
-			
-			 
-						   if (!TIME_OUT) {
-						 
-							   
-							   String NetxcodigoRespuesta = NextramaRespuesta.toString().substring(Integer.parseInt( posicionRepsuesta[0]), Integer.parseInt( posicionRepsuesta[1]))
-							   LogsApp.getInstance().Escribir("Nueva Trama respuesta: " + NextramaRespuesta)
-				   
-				   
-							   // actualizar la trama  a la nueva obtenida.
-							   this.tramaRespuesta = NextramaRespuesta
-							   mensajeRespuesta =     MensajesRespuestas.getInstancia()
-							   for (mr in ListadomensajesRespuesta) {
-								   if (mr.codigo.equals(NetxcodigoRespuesta)) {
-									   mensajeRespuesta = mr
-									   break
-								   }
-							   }
-				   
-							   LogsApp.getInstance().Escribir("[Mensaje de respuesta RC]  Codigo:  ${mensajeRespuesta.codigo}, Mensaje:  ${mensajeRespuesta.mensaje} ,   Secuencia:  ${mensajeRespuesta.secuencia} ")
-				   
-				   
-							   // Si el codigo resultante es igual al anterior quiere decir que esta cayendo en un bucle de la misma respusta
-							   // entonces se aumentara el numero de reintentos para que no sea algo infinito.
-							   if (mensajeRespuesta.codigo.equals(codigoRespuesta)) {
-								   intentos = intentos- 1
-							   }
-							   ejecutar(mensajeRespuesta.secuencia ,NetxcodigoRespuesta ,intentos )
-							   
-							   
-							   
-		   
-						   }else {
-							  insetarBugTIME_OUT("TIME OUT");
-							   LogsApp.getInstance().Escribir("Se obtubo un TIME_OUT esperando respuesta")
-						   }
- 
-						   
-						   
+
+			final Duration timeout = Duration.ofSeconds( requerimiento.getTimeOut() )
+			ExecutorService executor = Executors.newSingleThreadExecutor()
+
+			final Future<String> handler = executor.submit(new Callable() {
+						@Override
+						public String call() throws Exception {
+							return j.executeMetodoSecuencia(secuencia)
+						}
+					})
+			try {
+				NextramaRespuesta=handler.get(timeout.toMillis(), TimeUnit.MILLISECONDS)
+			} catch (TimeoutException e) {
+				println e.getMessage()
+				TIME_OUT = true
+				handler.cancel(true)
+			}
+			executor.shutdown()
+
+
+
+			if (!TIME_OUT) {
+
+
+				String NetxcodigoRespuesta = NextramaRespuesta.toString().substring(Integer.parseInt( posicionRepsuesta[0]), Integer.parseInt( posicionRepsuesta[1]))
+				LogsApp.getInstance().Escribir("Nueva Trama respuesta: " + NextramaRespuesta)
+
+
+				// actualizar la trama  a la nueva obtenida.
+				this.tramaRespuesta = NextramaRespuesta
+				mensajeRespuesta =     MensajesRespuestas.getInstancia()
+				for (mr in ListadomensajesRespuesta) {
+					if (mr.codigo.equals(NetxcodigoRespuesta)) {
+						mensajeRespuesta = mr
+						break
+					}
+				}
+
+				LogsApp.getInstance().Escribir("[Mensaje de respuesta RC]  Codigo:  ${mensajeRespuesta.codigo}, Mensaje:  ${mensajeRespuesta.mensaje} ,   Secuencia:  ${mensajeRespuesta.secuencia} ")
+
+
+				// Si el codigo resultante es igual al anterior quiere decir que esta cayendo en un bucle de la misma respusta
+				// entonces se aumentara el numero de reintentos para que no sea algo infinito.
+				if (mensajeRespuesta.codigo.equals(codigoRespuesta)) {
+					intentos = intentos- 1
+				}
+				ejecutar(mensajeRespuesta.secuencia ,NetxcodigoRespuesta ,intentos )
+
+
+
+
+			}else {
+				insetarBugTIME_OUT("TIME OUT");
+				LogsApp.getInstance().Escribir("Se obtubo un TIME_OUT esperando respuesta")
+			}
+
+
+
 		}
 
 

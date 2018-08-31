@@ -24,7 +24,7 @@ class Configuracion_Canal_Movimiento {
 	// Obtiene el listado de configuracion del switch desde la tavla Configuracion_canal_movimiento
 	void cargarConfiguracion () {
 
-		ResultSet odr  = ocnn.select( Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC, "query.configuracion_switch") )
+		ResultSet odr  = ocnn.select( Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "query.configuracion_switch") )
 
 		Configuracion_Canal_Movimiento obj  =  new Configuracion_Canal_Movimiento ()
 		if (odr != null) {

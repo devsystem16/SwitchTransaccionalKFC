@@ -10,7 +10,7 @@ class MensajesRespuestas {
 	public MensajesRespuestas () {
 		this.codigo = "ER"
 		this.mensaje  ="Mensaje no especificado."
-		this.secuencia ="insertar"
+		this.secuencia ="INSERTAR"
 		
 	}
 	public MensajesRespuestas(String codigo, String mensaje, String secuencia) {

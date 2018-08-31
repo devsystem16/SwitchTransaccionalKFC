@@ -13,8 +13,9 @@ class Propiedades {
 	static Properties getPropiedades(String file) {
 		try {
 			Properties propiedades = new Properties()
-			String configPath = Constantes.RUTA_ARCHIVOS + "\\"+file+".properties"
+			String configPath = Constantes.RUTA_ARCHIVOS + ""+file+".properties"
 
+		 
 			propiedades.load(new FileInputStream(configPath))
 
 			if (!propiedades.isEmpty()) {
@@ -37,7 +38,7 @@ class Propiedades {
 			if (valor != null)
 				return valor
 			else {
-				println "No se encuentra el dato [${key}] en el archivo [${file}] \nSe detuvo el servicio"
+				println "No se encuentra el dato [${key}] en el archivo [${file}] ${System.getProperty("line.separator")}Se detuvo el servicio"
 				System.exit(1)
 				return valor
 			}
@@ -49,7 +50,7 @@ class Propiedades {
 
 	static Object[] getArray(String file  , String key) {
 		try {
-			String data = getPropiedades(file).getProperty(key).replaceAll("\"", "")
+			String data = getPropiedades(file).getProperty(key).replaceAll(Constantes.backslas, "")
 			Object  [] arrayDAta = data.split(Constantes.SEPARADOR_PROPERTIES)
 			for (int i =0; i<arrayDAta.length ; i++ ) {
 				if ( arrayDAta[i].toString().equals("null"))
@@ -64,7 +65,7 @@ class Propiedades {
 
 	static Object[] getArray(String cadena) {
 		try {
-			String data = cadena.replaceAll("\"", "")
+			String data = cadena.replaceAll(Constantes.backslas, "")
 			Object  [] arrayDAta = data.split(Constantes.SEPARADOR_PROPERTIES)
 			for (int i =0; i<arrayDAta.length ; i++ ) {
 				if ( arrayDAta[i].toString().equals("null"))

@@ -1,12 +1,15 @@
 package kfc.com.modelo
 
 class  Constantes {
-
+	static String  backslashDbl = File.separator//+File.separator
+	static String  backslas = File.separator
+	
+	
 	static String SEPARADOR_PROPERTIES = "->";
 	static String RURA_JAR = "jar.ruta";
 	static String NEW_LINE =  System.getProperty("line.separator")
 	static String LINE_SALTO_RELLENO ="######################################################"
-	static String RUTA_ARCHIVOS =new File("").getAbsolutePath()
+	static String RUTA_ARCHIVOS =   "C:${backslashDbl}ServicioTarjetasKFC${backslashDbl}"// new File("").getAbsolutePath() + backslashDbl // 
 	static String TIMER_LOOP_ACTUALIZACION ="aplicacion.timer.actualizacion"
 	static String TIMER_LOOP_APP ="aplicacion.timer.loop.app"
 	static String ARCHIVO_CONFIGURACION_DINAMICO ="configuraciones.properties"
@@ -26,5 +29,6 @@ class  Constantes {
 	static String ESTADO_SWT_Respuesta_Autorizacion_ERROR = "(CONVERT(UNIQUEIDENTIFIER, HASHBYTES('MD5', '41')))"
 	
 	static String VALIDADOR_CONEXION_DISPOSITIVO  = "valida.dispositivo.conectado.secuencia"
+
 
 }

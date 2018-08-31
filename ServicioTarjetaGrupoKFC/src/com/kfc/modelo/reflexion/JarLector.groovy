@@ -9,12 +9,16 @@ import java.lang.reflect.InvocationTargetException
 import java.lang.Class
 import java.lang.reflect.ReflectPermission
 import java.lang.reflect.Type
+
+import com.kfc.conexion.ConexionSqlServer
 import com.sun.org.apache.bcel.internal.generic.LoadClass
 import com.sun.org.apache.xml.internal.utils.URI
 
+import kfc.com.modelo.Catalogo
 import kfc.com.modelo.Constantes
 import kfc.com.modelo.LogsApp
-
+import kfc.com.modelo.RequerimientoAutorizacion
+import kfc.com.modelo.Respuesta_Autorizacion
 import java.lang.reflect.Constructor
 import java.lang.reflect.Field;
 import javax.print.attribute.standard.PrinterLocation
@@ -23,6 +27,7 @@ import java.net.URL
 import java.security.CodeSource
 import java.sql.Connection
 import java.sql.DriverManager
+import java.util.ArrayList
 import java.util.zip.ZipEntry
 import java.util.zip.ZipInputStream
 
@@ -35,8 +40,8 @@ class JarLector {
 	Class beanClass
 	Object objClase
 	Method metodo
-
-
+	ConexionSqlServer ocnn
+	
 	private static JarLector Singelton
 
 	// Constructor
@@ -139,19 +144,90 @@ class JarLector {
 		return beanClass
 	}
 
+	public  Object  ejecutaMetodoInstanciado (  Object   objetoClase , Object [] paramsConstruct ,  String metodoEjecutar, Object [] ParametrosMetodo  ){
 
-	public  Object  ejecutaMetodo (   Class beanClass , Object [] paramsConstruct ,  String metodoEjecutar, Object [] ParametrosMetodo ){
+		int numeroParametros = ParametrosMetodo.length
+
+
+		if (ParametrosMetodo.length == 1) {
+			if (ParametrosMetodo [0].equals("") )
+			{
+				numeroParametros = 0
+			} else {
+				numeroParametros =ParametrosMetodo.length
+			}
+		}else {
+			numeroParametros =ParametrosMetodo.length
+		}
+
+
+		Class beanClass =  objetoClase.getClass()
+
+
+		Object respuesta
+		Object objClase = objetoClase
+
+		Object [] resultados = 	obtenerVectorTipadoMetodos(  beanClass, ParametrosMetodo)
+		Method metodo = null;
+		//Method[] metodos = beanClass.getMethods()
+
+		Method[] metodos = beanClass.getDeclaredMethods()
+
+		// Ubicar el metodo.
+		int length = metodos.length
+		for (int i = 0; i <length; i++) {
+			if (metodos[i].getName().equals(metodoEjecutar) && metodos[i].getParameterCount() == numeroParametros ) {
+				metodo = metodos[i]
+				break
+			}
+		}
+
+
+
+
+		try {
+
+			if  (resultados.length == 1) {
+				if (resultados[0] == "") {
+					respuesta =	metodo.invoke( objClase, null)
+				}else {
+					respuesta =	 metodo.invoke( objClase, resultados)
+				}
+			}else {
+				respuesta =	metodo.invoke( objClase, resultados)
+			}
+
+		}  catch (java.io.IOException e) {// InvocationTargetException e) {
+			respuesta =respuesta  + "*****catch " + e.getMessage() // e.getTargetException().getMessage() + " Catch"
+		}
+
+
+		return respuesta
+
+
+
+	}
+	public  Object  ejecutaMetodo (   Class beanClass , Object [] paramsConstruct ,  String metodoEjecutar, Object [] ParametrosMetodo   ){
 		Object respuesta
 		Object objClase
+
 		if  (paramsConstruct.length == 1) {
 			if (paramsConstruct[0] == "") {
 				objClase = beanClass.newInstance()
 			}else {
-				objClase = beanClass.newInstance(paramsConstruct[0])
+
+				Object [] parametrosTipados = obtenerVectorTipadoConstructor (beanClass, paramsConstruct)
+				objClase = beanClass.newInstance(parametrosTipados)
+				//				objClase = beanClass.newInstance(paramsConstruct[0])
 			}
 		}else {
-			objClase = beanClass.newInstance(paramsConstruct)
+			Object [] parametrosTipados = obtenerVectorTipadoConstructor (beanClass, paramsConstruct)
+			objClase = beanClass.newInstance(parametrosTipados)
+			//			objClase = beanClass.newInstance(paramsConstruct)
 		}
+
+
+
 		int numeroParametros = (ParametrosMetodo[0].equals("")) ? 0: ParametrosMetodo.length
 
 		Method metodo = null;
@@ -171,81 +247,8 @@ class JarLector {
 
 		try {
 
-			Object [] resultados = new Object [numeroParametros]
-			Class [] parametrosMetodo = metodo.getParameterTypes()
+			Object [] resultados =  obtenerVectorTipadoMetodos(beanClass, ParametrosMetodo , metodoEjecutar)// new Object [numeroParametros]
 
-			if (numeroParametros > 0 ) {
-
-				int c = 0
-				for (Class p : parametrosMetodo) {
-
-					String tipo  =	p.getSimpleName()
-					switch (tipo){
-						case  "int":
-							resultados [c] =  Integer.parseInt(ParametrosMetodo[c])
-							break
-
-						case  "String":
-							resultados [c] = ( ParametrosMetodo[c].toString() =="null" ) ? null  : ParametrosMetodo[c].toString()
-							break
-
-						case  "CString":
-							resultados [c] =  ( ParametrosMetodo[c].toString() =="null" ) ? null  : ParametrosMetodo[c].toString()
-							break
-
-						case  "Integer":
-							resultados [c] =  ( ParametrosMetodo[c].toString() =="null" ) ? null  :Integer.parseInt(ParametrosMetodo[c])
-							break
-
-						case  "Date":
-							resultados [c] =( ParametrosMetodo[c].toString() =="null" ) ? null  :  ParametrosMetodo[c].toString()
-							break
-
-						case  "Object[]":
-							String a =   ParametrosMetodo[c]
-
-							if (a != null) {
-								if (a !="") {
-									resultados[c] = a.split(">")
-								}else {
-									resultados[c] = null
-								}
-							}else {
-								resultados[c] = null
-							}
-
-							break
-
-						case  "[LObject;":
-						// String a =   ParametrosMetodo[c]
-						// resultados[c] = a.split(">")
-							String a =   ParametrosMetodo[c]
-							if (a != null) {
-								if (a !="") {
-									resultados[c] = a.split(">")
-								}else {
-									resultados[c] = null
-								}
-							}else {
-								resultados[c] = null
-							}
-
-							break
-
-						case  "Object":
-							resultados [c] =  (  ParametrosMetodo[c].toString() ==  "null" ) ? null : ParametrosMetodo[c]
-							break
-						case  "byte[]":
-							resultados [c] =  (  ParametrosMetodo[c].toString() ==  "null" )  ? null:  ParametrosMetodo[c].toString().getBytes()
-							break
-
-						default :
-							resultados [c] = (  ParametrosMetodo[c].toString() ==  "null" )  ? null:  ParametrosMetodo[c].toString()
-							break
-					}
-					c++
-				}
-			}
 
 			if  (resultados.length == 1) {
 				if (resultados[0] == "") {
@@ -261,129 +264,603 @@ class JarLector {
 			}
 
 		}  catch (java.io.IOException e) {// InvocationTargetException e) {
-			respuesta =respuesta  + "*****catch " + e.getMessage() // e.getTargetException().getMessage() + " Catch"
+			respuesta = "" // e.getTargetException().getMessage() + " Catch"
+			LogsApp.getInstance().Escribir( "Exception : " +  e.getMessage())
 		}
 
 
 		return respuesta
 
 	}
-	Object executeMetodoSecuencia (String lineas) {
+
+
+	Object [] obtenerVectorTipadoMetodos (Class beanClass, Object [] ParametrosMetodo, String metodoEjecutar) {
+
+		int numeroParametros = ParametrosMetodo.length
+
+
+		if (ParametrosMetodo.length == 1) {
+			if (ParametrosMetodo [0].equals("") )
+			{
+				numeroParametros = 0
+			} else {
+				numeroParametros =ParametrosMetodo.length
+			}
+		}else {
+			numeroParametros =ParametrosMetodo.length
+		}
+
+		Method metodo
+		Method [] metodos = beanClass.getDeclaredMethods()
+
+		for (c in metodos) {
+
+			if (c.getParameterCount() ==numeroParametros && c.getName().equals(metodoEjecutar) ) {
+				metodo = c
+				break
+			}
+		}
+
+
+
+
+		Object [] resultados = new Object [ParametrosMetodo.length]
+		Class [] parametrosMetodo = metodo.getParameterTypes()
+
+		if (numeroParametros > 0 ) {
+
+			int c = 0
+			for (Class p : parametrosMetodo) {
+
+				String tipo  =	p.getSimpleName()
+				switch (tipo){
+					case  "int":
+						resultados [c] =  Integer.parseInt(ParametrosMetodo[c])
+						break
+
+					case  "String":
+						resultados [c] = ( ParametrosMetodo[c].toString() =="null" ) ? null  : ParametrosMetodo[c].toString()
+						break
+
+					case  "CString":
+						resultados [c] =  ( ParametrosMetodo[c].toString() =="null" ) ? null  : ParametrosMetodo[c].toString()
+						break
+
+					case  "Integer":
+						resultados [c] =  ( ParametrosMetodo[c].toString() =="null" ) ? null  :Integer.parseInt(ParametrosMetodo[c])
+						break
+
+					case  "Date":
+						resultados [c] =( ParametrosMetodo[c].toString() =="null" ) ? null  :  ParametrosMetodo[c].toString()
+						break
+
+					case  "Object[]":
+						String a =   ParametrosMetodo[c]
+
+						if (a != null) {
+							if (a !="") {
+								resultados[c] = a.split(">")
+							}else {
+								resultados[c] = null
+							}
+						}else {
+							resultados[c] = null
+						}
+
+						break
+
+					case  "[LObject;":
+					// String a =   ParametrosMetodo[c]
+					// resultados[c] = a.split(">")
+						String a =   ParametrosMetodo[c]
+						if (a != null) {
+							if (a !="") {
+								resultados[c] = a.split(">")
+							}else {
+								resultados[c] = null
+							}
+						}else {
+							resultados[c] = null
+						}
+
+						break
+
+					case  "Object":
+						resultados [c] =  (  ParametrosMetodo[c].toString() ==  "null" ) ? null : ParametrosMetodo[c]
+						break
+					case  "byte[]":
+						resultados [c] =  (  ParametrosMetodo[c].toString() ==  "null" )  ? null:  ParametrosMetodo[c].toString().getBytes()
+						break
+
+					default :
+						resultados [c] = (  ParametrosMetodo[c].toString() ==  "null" )  ? null:  ParametrosMetodo[c]
+						break
+				}
+				c++
+			}
+		}
+		if (resultados.length == 1) {
+			if (resultados[0]==  null) {
+				resultados  [0] = ""
+			}
+		}
+
+
+		return resultados
+	}
+
+
+	Object [] obtenerVectorTipadoConstructor (Class beanClass, Object [] ParametrosConstructor) {
+
+		//		int numeroParametros = ParametrosConstructor.length
+		//
+		//		if (ParametrosConstructor.length == 1) {
+		//			if (ParametrosConstructor[0] =="") {
+		//				numeroParametros =0 ;
+		//			}
+		//		}
+		int numeroParametros = ParametrosConstructor.length
+
+
+		if (ParametrosConstructor.length == 1) {
+			if (ParametrosConstructor [0].equals("") )
+			{
+				numeroParametros = 0
+			} else {
+				numeroParametros =ParametrosConstructor.length
+			}
+		}else {
+			numeroParametros =ParametrosConstructor.length
+		}
+
+
+		Constructor constructor
+		Constructor []  constructores  = beanClass.getConstructors()
+
+		for (c in constructores) {
+
+			if (c.getParameterCount() ==numeroParametros ) {
+				constructor = c
+				break
+			}
+		}
+
+
+		Object [] resultados = new Object [numeroParametros]
+
+
+		if (numeroParametros > 0 ) {
+
+
+			Class [] parametrosMetodo = constructor.getParameterTypes()
+			int c = 0
+			for (Class p : parametrosMetodo) {
+
+				String tipo  =	p.getSimpleName()
+				switch (tipo){
+					case  "int":
+						resultados [c] =  Integer.parseInt(ParametrosConstructor[c])
+						break
+
+					case  "String":
+						resultados [c] = ( ParametrosConstructor[c].toString() =="null" ) ? null  : ParametrosConstructor[c].toString()
+						break
+
+					case  "CString":
+						resultados [c] =  ( ParametrosConstructor[c].toString() =="null" ) ? null  : ParametrosConstructor[c].toString()
+						break
+
+					case  "Integer":
+						resultados [c] =  ( ParametrosConstructor[c].toString() =="null" ) ? null  :Integer.parseInt(ParametrosConstructor[c])
+						break
+
+					case  "Date":
+						resultados [c] =( ParametrosConstructor[c].toString() =="null" ) ? null  :  ParametrosConstructor[c].toString()
+						break
+
+					case  "Object[]":
+						String a =   ParametrosConstructor[c]
+
+						if (a != null) {
+							if (a !="") {
+								resultados[c] = a.split(">")
+							}else {
+								resultados[c] = null
+							}
+						}else {
+							resultados[c] = null
+						}
+
+						break
+
+					case  "[LObject;":
+					// String a =   ParametrosMetodo[c]
+					// resultados[c] = a.split(">")
+						String a =   ParametrosConstructor[c]
+						if (a != null) {
+							if (a !="") {
+								resultados[c] = a.split(">")
+							}else {
+								resultados[c] = null
+							}
+						}else {
+							resultados[c] = null
+						}
+
+						break
+
+					case  "Object":
+						resultados [c] =  (  ParametrosConstructor[c].toString() ==  "null" ) ? null : ParametrosConstructor[c]
+						break
+					case  "byte[]":
+						resultados [c] =  (  ParametrosConstructor[c].toString() ==  "null" )  ? null:  ParametrosConstructor[c].toString().getBytes()
+						break
+
+					default :
+						resultados [c] = (  ParametrosConstructor[c].toString() ==  "null" )  ? null:  ParametrosConstructor[c]
+						break
+				}
+				c++
+			}
+		}
+
+
+
+
+
+		return resultados
+	}
+
+	Object executeMetodoSecuencia (String lineas, Respuesta_Autorizacion respuesta) {
+
+		boolean ClaseInstanciada = false
 		Object mensajeRespuesta ;
 
 		Object  [] secuencia = lineas.split(Constantes.SEPARADOR_PROPERTIES)
 		Object  [] colaSecuencia  = new Object [secuencia.length]
 		for (int i =0 ; i< secuencia.length; i++) {
+
+
 			String metodo = secuencia[i].toString().substring(0,secuencia[i].toString().indexOf("(")).trim()
 			String contenido =secuencia[i].toString().substring(secuencia[i].toString().indexOf("(") +1, secuencia[i].toString().length() -1 )
-			if (metodo.equals("obtieneClase")) {
-				try {
-					Object objClase = cl.loadClass (buscarPaquete(contenido.toString()))  // obtieneClase(cl, contenido)
+
+
+			switch (metodo) {
+				case "obtieneClaseNI" :
+
+					String parametrosClase = contenido.toString().substring(contenido.indexOf("[")+1 ,contenido.toString().length() -1 )
+					Object  [] parametros  = parametrosClase.split(">")
+
+					contenido = contenido.substring(0 , contenido.indexOf("["))
+					Class beanClass = cl.loadClass (buscarPaquete(contenido.toString()))  // obtieneClase(cl, contenido)
+
+					Object [] ParametrosConClase = new Object [parametros.length]
+
+
+					for (int  j=0; j< parametros.length ; j++) {
+						if (parametros[j].toString().contains("[")) {
+							int posc =  Integer.parseInt( parametros[j].toString().replace("[", "").replace("]","") ) //.replaceAll("[\\[\\]]", ""))
+							ParametrosConClase [j] =colaSecuencia[posc]
+						}
+						else {
+							ParametrosConClase [j] = parametros [j]
+						}
+					}
+
+
+					Object [] parametrosTipados = obtenerVectorTipadoConstructor (beanClass ,ParametrosConClase )
+					Object	objClase
+					if (parametrosTipados.length == 1 && parametrosTipados[0]== "") {
+						objClase  = beanClass.newInstance()
+					}else {
+						objClase  =	beanClass.newInstance(parametrosTipados)
+					}
+
+
 					colaSecuencia[i] = objClase
-				} catch (Exception e) {
-					LogsApp.getInstance().Escribir("No se pudo encontrar la Clase ${contenido} " + e.getMessage())
-					e.printStackTrace()
-				}
 
-			}
-			else if (metodo.equals("ejecutaMetodo")) {
+					ClaseInstanciada = true // Indica que la clase ya se instancio
 
-				Object [] ConfigEjecutaMetodo = contenido.split(">")
+					break
 
-				int  posicionElemento = -1
-				Object objClaseTemp = null
-				if (ConfigEjecutaMetodo[0].toString().contains("obtieneClase")) {
-					String cadena = ConfigEjecutaMetodo[0].toString()
-					String contenidoTem =cadena.toString().substring(cadena.toString().indexOf("(") +1, cadena.toString().length() -1 ).trim()
-					objClaseTemp =cl.loadClass (contenidoTem.toString()) // obtieneClase(cl, contenidoTem)
-				}else {
-					// 1) Posicion de referencia anterior.
-					posicionElemento =  Integer.parseInt( ConfigEjecutaMetodo[0].replaceAll("[\\[\\]]", ""))
-				}
+
+				case "obtieneClase" :
+
+					try {
+						Object objClase = cl.loadClass (buscarPaquete(contenido.toString()))  // obtieneClase(cl, contenido)
+						colaSecuencia[i] = objClase
+						ClaseInstanciada = false// Indica que la clase  aun no se instancia y lo hará dentro del metodo ejecuta.
+					} catch (Exception e) {
+						LogsApp.getInstance().Escribir("No se pudo encontrar la Clase ${contenido} " + e.getMessage())
+						e.printStackTrace()
+					}
+
+					break
+
+				case "ejecutaMetodo" :
+
+					Object [] ConfigEjecutaMetodo = contenido.split(">")
+
+					int  posicionElemento = -1
+					Object objClaseTemp = null
+					if (ConfigEjecutaMetodo[0].toString().contains("obtieneClase")) {
+						String cadena = ConfigEjecutaMetodo[0].toString()
+						String contenidoTem =cadena.toString().substring(cadena.toString().indexOf("(") +1, cadena.toString().length() -1 ).trim()
+						objClaseTemp =cl.loadClass (contenidoTem.toString()) // obtieneClase(cl, contenidoTem)
+						ClaseInstanciada = false // new
+					}else {
+						// 1) Posicion de referencia anterior.
+						posicionElemento =  Integer.parseInt( ConfigEjecutaMetodo[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
+					}
 
 				//2) Parametros del contructor.
-				Object [] ParametrosConstruc ;
-				if (ConfigEjecutaMetodo[1].toString().equals("[]")) {
-					ParametrosConstruc =  [""]
-				}else {
-					String parametrosSinCorchetes = ConfigEjecutaMetodo[1].toString().trim()
-					parametrosSinCorchetes = parametrosSinCorchetes.substring(1 , parametrosSinCorchetes.length()-1)
-					Object [] vectorParame = parametrosSinCorchetes.split("&")
+					Object [] ParametrosConstruc ;
+					if (ConfigEjecutaMetodo[1].toString().equals("[]")) {
+						ParametrosConstruc =  [""]
+					}else {
+						String parametrosSinCorchetes = ConfigEjecutaMetodo[1].toString().trim()
+						parametrosSinCorchetes = parametrosSinCorchetes.substring(1 , parametrosSinCorchetes.length()-1)
+						Object [] vectorParame = parametrosSinCorchetes.split("&")
 
-					ParametrosConstruc = new Object [vectorParame.length]
-					for (int j =0 ; j<vectorParame.length; j++ ) {
-						if (vectorParame[j].toString().contains("[")) {
-							int posc =  Integer.parseInt( vectorParame[j].replaceAll("[\\[\\]]", ""))
-							ParametrosConstruc [j] =colaSecuencia[posc]
-						}else {
-							// Validar tipo de dato.
-							String dato = vectorParame[j]
-							if (dato.toString().contains("*")) {
-								ParametrosConstruc [j] =  ( vectorParame[j].toString().replace("*", "")).toString()
+						ParametrosConstruc = new Object [vectorParame.length]
+						for (int j =0 ; j<vectorParame.length; j++ ) {
+							if (vectorParame[j].toString().contains("[")) {
+								int posc =  Integer.parseInt( vectorParame[j].toString().replace("[", "").replace("]","") ) //.replaceAll("[\\[\\]]", ""))
+								ParametrosConstruc [j] =colaSecuencia[posc]
 							}else {
-								ParametrosConstruc [j] = Integer.parseInt(  ( vectorParame[j].toString().replace("*", "")))
+								// Validar tipo de dato.
+								String dato = vectorParame[j]
+								if (dato.toString().contains("*")) {
+									ParametrosConstruc [j] =  ( vectorParame[j].toString().replace("*", "")).toString()
+								}else {
+									ParametrosConstruc [j] = Integer.parseInt(  ( vectorParame[j].toString().replace("*", "")))
+								}
+								// boolean?
 							}
-							// boolean?
 						}
 					}
-				}
 				//3) Metodo a invocar
-				String  metodoInvocar = ConfigEjecutaMetodo[2].toString().trim()
+					String  metodoInvocar = ConfigEjecutaMetodo[2].toString().trim()
 
 				//4) Parametros del Metodo.
-				Object [] ParametrosMethod ;
-				if (ConfigEjecutaMetodo[3].toString().equals("[]")) {
-					ParametrosMethod =  [""]
-				}else {
+					Object [] ParametrosMethod ;
+					if (ConfigEjecutaMetodo[3].toString().equals("[]")) {
+						ParametrosMethod =  [""]
+					}else {
 
-					String parametrosSinCorchetes = ConfigEjecutaMetodo[3].toString().trim()
-					parametrosSinCorchetes = parametrosSinCorchetes.substring(1 , parametrosSinCorchetes.length()-1)
-					Object [] vectorParame = parametrosSinCorchetes.split("&")
+						String parametrosSinCorchetes = ConfigEjecutaMetodo[3].toString().trim()
+						parametrosSinCorchetes = parametrosSinCorchetes.substring(1 , parametrosSinCorchetes.length()-1)
+						Object [] vectorParame = parametrosSinCorchetes.split("&")
 
-					ParametrosMethod = new Object [vectorParame.length]
-					for (int j =0 ; j<vectorParame.length; j++ ) {
-						if (vectorParame[j].toString().contains("[")) {
-							int posc =  Integer.parseInt( vectorParame[j].replaceAll("[\\[\\]]", ""))
-							ParametrosMethod [j] =colaSecuencia[posc]
-						}else {
-
-							String dato = vectorParame[j]
-							if (dato.toString().contains("*")) {
-								ParametrosMethod [j] =  ( vectorParame[j].toString().replace("*", "")).toString()
+						ParametrosMethod = new Object [vectorParame.length]
+						for (int j =0 ; j<vectorParame.length; j++ ) {
+							if (vectorParame[j].toString().contains("[")) {
+								int posc =  Integer.parseInt( vectorParame[j].toString().replace("[", "").replace("]","") ) //.replaceAll("[\\[\\]]", ""))
+								ParametrosMethod [j] =colaSecuencia[posc]
 							}else {
-								ParametrosMethod [j] =   vectorParame[j]
-							}
 
-							//ParametrosMethod = vectorParame;
+								String dato = vectorParame[j]
+								if (dato.toString().contains("*")) {
+									ParametrosMethod [j] =  ( vectorParame[j].toString().replace("*", "")).toString()
+								}else {
+									ParametrosMethod [j] =   vectorParame[j]
+								}
+
+								//ParametrosMethod = vectorParame;
+							}
+						}
+						//pendiente.
+						//ParametrosMethod =params
+					}
+
+					Object elemento = null
+					if (posicionElemento == -1) {
+						elemento = objClaseTemp;
+					}else {
+						elemento = colaSecuencia[posicionElemento]
+					}
+
+
+					try {
+
+						if (ClaseInstanciada) {
+							mensajeRespuesta= ejecutaMetodoInstanciado(elemento , ParametrosConstruc, metodoInvocar,  ParametrosMethod)
+						}else {
+							mensajeRespuesta= ejecutaMetodo(elemento , ParametrosConstruc, metodoInvocar,  ParametrosMethod)
+						}
+
+					}
+					catch (Exception er) {
+						println "error ws " : er.getMessage()
+					}
+
+					colaSecuencia[i] =mensajeRespuesta
+
+					break
+
+
+				case "esperar" :
+
+
+					try
+					{
+						int sTiempo = Integer.parseInt(contenido)
+						Thread.sleep(sTiempo);
+					}catch(Exception e){
+
+					}
+
+					break
+
+				case "asignaAtributo":
+
+					Object [] ConfigAsignaAtributo= contenido.split(">")
+					int  posicionElemento = -1
+					Object objClaseTemp = null
+
+					if (ConfigAsignaAtributo[0].toString().contains("obtieneClase")) {
+						String cadena = ConfigAsignaAtributo[0].toString()
+						String contenidoTem =cadena.toString().substring(cadena.toString().indexOf("(") +1, cadena.toString().length() -1 ).trim()
+						objClaseTemp =cl.loadClass (contenidoTem.toString())
+						ClaseInstanciada = false // new
+					}else {
+						// 1) Posicion de referencia anterior.
+						//						if (ConfigAsignaAtributo[j].toString().contains("[")) {
+						//
+						//						}
+						posicionElemento =  Integer.parseInt( ConfigAsignaAtributo[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
+					}
+
+					Object elemento = null
+					if (posicionElemento == -1) {
+						elemento = objClaseTemp;
+					}else {
+						elemento = colaSecuencia[posicionElemento]
+					}
+
+
+					Object [] atributosSet = ConfigAsignaAtributo[1].split(",")
+
+					respuesta.cargarCatalogo("ENVIO")
+
+
+					for (atributo in atributosSet) {
+						for (cat in respuesta.catalogo) {
+							if (atributo.toString().equals(cat.nombre_campo)) {
+								setAtributo(elemento ,cat.nombre_campo , cat.values)
+								break
+							}
 						}
 					}
-					//pendiente.
-					//ParametrosMethod =params
-				}
 
-				Object elemento = null
-				if (posicionElemento == -1) {
-					elemento = objClaseTemp;
-				}else {
-					elemento = colaSecuencia[posicionElemento]
-				}
+				//					for (cat in respuesta.catalogo) {
+				//						setAtributo(elemento ,cat.nombre_campo , cat.values)
+				//					}
 
-				mensajeRespuesta= ejecutaMetodo(elemento , ParametrosConstruc, metodoInvocar,  ParametrosMethod)
-				colaSecuencia[i] =mensajeRespuesta
-			}else if (metodo.equals("esperar")) {
-				try
-				{
-					int sTiempo = Integer.parseInt(contenido)
-					Thread.sleep(sTiempo);
-				}catch(Exception e){
-				}
+					colaSecuencia[i] = elemento
+
+					break
+
+
+				case "creaTrama":
+					int  posicionElemento = -1
+					Object [] ConfigCreaTrama= contenido.split(">")
+					posicionElemento =  Integer.parseInt( ConfigCreaTrama[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
+					Object objClaseTemp = null
+
+					Object elemento = null
+					if (posicionElemento == -1) {
+						elemento = objClaseTemp;
+					}else {
+						elemento = colaSecuencia[posicionElemento]
+					}
+
+
+					respuesta.cargarCatalogo("RESPUESTA")
+
+					String caracterSep =  (respuesta.requerimiento.caracterSeparador.toString().length() == 0 )?  "->" : respuesta.requerimiento.caracterSeparador
+					respuesta.requerimiento.caracterSeparador  = caracterSep
+					respuesta.respuestatipoObjeto = true
+					String trama  ="";
+					for (cat in respuesta.catalogo) {
+						if (trama.equals("")) {
+							trama  = trama + "${GetAtributo(elemento ,cat.nombre_campo  )}"	
+						}else {
+							trama  = trama + "${caracterSep}${GetAtributo(elemento ,cat.nombre_campo  )}"
+						}
+				 
+					}
+
+					mensajeRespuesta = trama 
+					break
+
+
+				default :
+					LogsApp.getInstance().Escribir("Secuencia [${metodo}] no existe.")
+					System.exit(1)
+					break
+
 			}
-			else {
-				LogsApp.getInstance().Escribir("Secuencia [${metodo}] no existe.")
-				System.exit(1)
-			}
+
+
 		}
 		return mensajeRespuesta//.toString();
+	}
+
+	static public Object convertirTipoDato (String tipo, Object Value) {
+
+		switch (tipo){
+			case  "int":
+				return  (Value.toString() =="null" ) ? null  :Integer.parseInt(Value)
+				break
+
+			case  "String":
+				return     (Value.toString() =="null" ) ? null  :Value.toString()
+				break
+
+			case  "CString":
+				return  (Value.toString() =="null" ) ? null  :Value.toString()
+
+				break
+
+			case  "Integer":
+				return  (Value.toString() =="null" ) ? null  :Integer.parseInt(Value)
+
+				break
+
+			case  "Date":
+				return     (Value.toString() =="null" ) ? null  :Value.toString()
+				break
+
+			case  "Object":
+				return   ( Value.toString() ==  "null" ) ? null :Value
+				break
+			case  "byte[]":
+				return   (Value.toString() ==  "null" )  ? null:  Value.toString().getBytes()
+				break
+
+			default :
+				return  ( Value.toString() ==  "null" )  ? null:Value
+				break
+		}
+	}
+	public static boolean setAtributo(Object Objeto, String nombreAtributo, Object valorNuevo) {
+		Class<?> clazz = Objeto.getClass();
+		while (clazz != null) {
+			try {
+				Field field = clazz.getDeclaredField(nombreAtributo);
+				field.setAccessible(true);
+				Object tipoDAto  = convertirTipoDato (field.getType().getSimpleName(), valorNuevo)
+				field.set(Objeto, tipoDAto);
+				return true;
+			} catch (NoSuchFieldException e) {
+				clazz = clazz.getSuperclass();
+			} catch (Exception e) {
+				throw new IllegalStateException(e);
+			}
+		}
+		return false;
+	}
+
+	public static Object GetAtributo(Object Objeto, String nombreAtributo) {
+		Class<?> clazz = Objeto.getClass();
+		while (clazz != null) {
+			try {
+				Field field = clazz.getDeclaredField(nombreAtributo);
+				field.setAccessible(true);
+				Object attr = field.get(Objeto)
+
+				return attr
+			} catch (NoSuchFieldException e) {
+				//				clazz = clazz.getSuperclass();
+				return  ""
+			} catch (Exception e) {
+				return  ""
+				//				throw new IllegalStateException(e);
+				println new IllegalStateException(e).getMessage()
+			}
+		}
+		return false;
 	}
 
 	// Metodo invocador.

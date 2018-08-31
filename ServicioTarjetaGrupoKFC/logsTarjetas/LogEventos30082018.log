@@ -1,0 +1,68 @@
+30-08-2018 12:43:24 - ################################################################
+30-08-2018 12:43:24 - Procesando ID Canal Movimineto :33337B2F-7CAC-E811-810A-00505686417C
+30-08-2018 12:43:24 - Actualiza estado de Canal Moviminetos 61 :33337B2F-7CAC-E811-810A-00505686417C
+30-08-2018 12:43:24 - Actualiza estado de Requerimineto 61 :684
+30-08-2018 12:43:24 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1037,0,0,amaxpoint,0,0,39])
+30-08-2018 12:43:57 - Respuesta obtenida: 00,126177,000000004000,000000000000,PRB00000  ,000242,000407,00018487,000830,1243,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,70
+30-08-2018 12:43:57 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+30-08-2018 12:43:57 - si cumple longitud - Trama insertada mediante ejecución normal: 00,126177,000000004000,000000000000,PRB00000  ,000242,000407,00018487,000830,1243,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,70
+30-08-2018 12:43:57 - Actualizar a estado 42 ID: 33337B2F-7CAC-E811-810A-00505686417C
+30-08-2018 16:18:40 - ################################################################
+30-08-2018 16:18:40 - Procesando ID Canal Movimineto :52682042-9AAC-E811-810A-00505686417C
+30-08-2018 16:18:40 - Actualiza estado de Canal Moviminetos 61 :52682042-9AAC-E811-810A-00505686417C
+30-08-2018 16:18:40 - Actualiza estado de Requerimineto 61 :685
+30-08-2018 16:18:40 - ------------Exception:  No signature of method: com.kfc.modelo.reflexion.JarLector.executeMetodoSecuencia() is applicable for argument types: (String) values: [ejecutaMetodo(obtieneClase(kfc.com.modelo.ValidadorDispositivos)>[]>DispositivoConectadoPuertoSerial>[COM9])]
+Possible solutions: executeMetodoSecuencia(java.lang.String, kfc.com.modelo.RequerimientoAutorizacion)
+30-08-2018 16:19:22 - ################################################################
+30-08-2018 16:19:22 - Procesando ID Canal Movimineto :BCFB265B-9AAC-E811-810A-00505686417C
+30-08-2018 16:19:22 - Actualiza estado de Canal Moviminetos 61 :BCFB265B-9AAC-E811-810A-00505686417C
+30-08-2018 16:19:22 - Actualiza estado de Requerimineto 61 :686
+30-08-2018 16:19:22 - ------------Exception:  No signature of method: com.kfc.modelo.reflexion.JarLector.executeMetodoSecuencia() is applicable for argument types: (String) values: [ejecutaMetodo(obtieneClase(kfc.com.modelo.ValidadorDispositivos)>[]>DispositivoConectadoPuertoSerial>[COM9])]
+Possible solutions: executeMetodoSecuencia(java.lang.String, kfc.com.modelo.RequerimientoAutorizacion)
+30-08-2018 16:19:46 - ################################################################
+30-08-2018 16:19:46 - Procesando ID Canal Movimineto :3D3C1A6A-9AAC-E811-810A-00505686417C
+30-08-2018 16:19:46 - Actualiza estado de Canal Moviminetos 61 :3D3C1A6A-9AAC-E811-810A-00505686417C
+30-08-2018 16:19:46 - Actualiza estado de Requerimineto 61 :687
+30-08-2018 16:19:46 - ------------Exception:  No signature of method: com.kfc.modelo.reflexion.JarLector.executeMetodoSecuencia() is applicable for argument types: (String) values: [ejecutaMetodo(obtieneClase(kfc.com.modelo.ValidadorDispositivos)>[]>DispositivoConectadoPuertoSerial>[COM9])]
+Possible solutions: executeMetodoSecuencia(java.lang.String, kfc.com.modelo.RequerimientoAutorizacion)
+30-08-2018 16:20:13 - ################################################################
+30-08-2018 16:20:14 - Procesando ID Canal Movimineto :73C1897A-9AAC-E811-810A-00505686417C
+30-08-2018 16:20:14 - Actualiza estado de Canal Moviminetos 61 :73C1897A-9AAC-E811-810A-00505686417C
+30-08-2018 16:20:14 - Actualiza estado de Requerimineto 61 :688
+30-08-2018 16:20:33 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1041,0,0,amaxpoint,0,0,38])
+30-08-2018 16:21:34 - Se obtubo un TIME_OUT esperando respuesta
+30-08-2018 16:21:34 - Actualizar a estado 42 ID: 73C1897A-9AAC-E811-810A-00505686417C
+30-08-2018 16:23:15 - ################################################################
+30-08-2018 16:23:15 - Procesando ID Canal Movimineto :716C50E6-9AAC-E811-810A-00505686417C
+30-08-2018 16:23:15 - Actualiza estado de Canal Moviminetos 61 :716C50E6-9AAC-E811-810A-00505686417C
+30-08-2018 16:23:15 - Actualiza estado de Requerimineto 61 :689
+30-08-2018 16:23:22 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1042,0,0,amaxpoint,0,0,3B])
+30-08-2018 16:24:22 - Se obtubo un TIME_OUT esperando respuesta
+30-08-2018 16:24:22 - Actualizar a estado 42 ID: 716C50E6-9AAC-E811-810A-00505686417C
+30-08-2018 16:27:20 - ################################################################
+30-08-2018 16:27:20 - Procesando ID Canal Movimineto :9513D477-9BAC-E811-810A-00505686417C
+30-08-2018 16:27:20 - Actualiza estado de Canal Moviminetos 61 :9513D477-9BAC-E811-810A-00505686417C
+30-08-2018 16:27:20 - Actualiza estado de Requerimineto 61 :690
+30-08-2018 16:27:24 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1043,0,0,amaxpoint,0,0,3A])
+30-08-2018 16:27:46 - ------------Exception:  groovy.lang.MissingMethodException: No signature of method: kfc.com.modelo.RequerimientoAutorizacion.cargarCatalogo() is applicable for argument types: (String) values: [ENVIO]
+Possible solutions: cargarCatalogo()
+30-08-2018 16:30:13 - ################################################################
+30-08-2018 16:30:13 - Procesando ID Canal Movimineto :292369E0-9BAC-E811-810A-00505686417C
+30-08-2018 16:30:13 - Actualiza estado de Canal Moviminetos 61 :292369E0-9BAC-E811-810A-00505686417C
+30-08-2018 16:30:13 - Actualiza estado de Requerimineto 61 :691
+30-08-2018 16:30:14 - ------------Exception:  No signature of method: com.kfc.modelo.reflexion.JarLector.executeMetodoSecuencia() is applicable for argument types: (String, kfc.com.modelo.RequerimientoAutorizacion) values: [ejecutaMetodo(obtieneClase(kfc.com.modelo.ValidadorDispositivos)>[]>DispositivoConectadoPuertoSerial>[COM9]), ...]
+Possible solutions: executeMetodoSecuencia(java.lang.String, kfc.com.modelo.Respuesta_Autorizacion)
+30-08-2018 16:30:32 - ################################################################
+30-08-2018 16:30:32 - Procesando ID Canal Movimineto :33B4EBEA-9BAC-E811-810A-00505686417C
+30-08-2018 16:30:32 - Actualiza estado de Canal Moviminetos 61 :33B4EBEA-9BAC-E811-810A-00505686417C
+30-08-2018 16:30:32 - Actualiza estado de Requerimineto 61 :692
+30-08-2018 16:30:34 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1045,0,0,amaxpoint,0,0,3C])
+30-08-2018 16:31:34 - Se obtubo un TIME_OUT esperando respuesta
+30-08-2018 16:31:34 - Actualizar a estado 42 ID: 33B4EBEA-9BAC-E811-810A-00505686417C
+30-08-2018 16:52:12 - ################################################################
+30-08-2018 16:52:12 - Procesando ID Canal Movimineto :EDD40122-9CAC-E811-810A-00505686417C
+30-08-2018 16:52:12 - Actualiza estado de Canal Moviminetos 61 :EDD40122-9CAC-E811-810A-00505686417C
+30-08-2018 16:52:12 - Actualiza estado de Requerimineto 61 :693
+30-08-2018 16:52:12 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1046,0,0,amaxpoint,0,0,3F])
+30-08-2018 16:53:12 - Se obtubo un TIME_OUT esperando respuesta
+30-08-2018 16:53:12 - Actualizar a estado 42 ID: EDD40122-9CAC-E811-810A-00505686417C

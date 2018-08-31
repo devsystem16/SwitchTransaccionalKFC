@@ -27,13 +27,13 @@ class ColaProcesos {
 	void actalizarEsatoEnProceso () {
 
 		Object [] prm = [61 , this.iDCanalMovimiento.toString()]
-		 	 oCnn.update(Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "query.updateCanal"), prm)
+		 	 oCnn.update(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.updateCanal"), prm)
 		println "Actualizo a 61 el registro ${this.iDCanalMovimiento}"
 	}
 
 	void actualizarEstadoEjecutado() {
 		Object [] prm = [42 , this.iDCanalMovimiento.toString()]
-		 	 oCnn.update(Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "query.updateCanal"), prm)
+		 	 oCnn.update(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.updateCanal"), prm)
 		println "Actualizo a 42 el registro ${this.iDCanalMovimiento}"
 	}
 
@@ -49,7 +49,7 @@ class ColaProcesos {
 		ResultSet odr = null
 		try {
 
-			odr =  oCnn.selectSQL(Propiedades.get( Constantes.ARCHIVO_APPLICATION_STATIC, Constantes.QUERY_PROCESO_COLA) , parametros)
+			odr =  oCnn.selectSQL(Propiedades.get( Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.QUERY_PROCESO_COLA) , parametros)
 
 			ColaProcesos cola
 			if (odr !=null) {

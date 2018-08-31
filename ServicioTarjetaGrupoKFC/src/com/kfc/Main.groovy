@@ -4,6 +4,8 @@ import java.beans.DesignMode
 import java.sql.Connection
 import com.kfc.conexion.ConexionSqlServer
 import com.kfc.modelo.reflexion.JarLector
+
+import groovy.transform.Field
 import kfc.com.modelo.ArchivoProperties
 import kfc.com.modelo.ColaProcesos
 import kfc.com.modelo.Constantes
@@ -27,63 +29,14 @@ import java.util.concurrent.TimeoutException;
 public class Main {
 
 
-
 	static Runtime garbage = Runtime.getRuntime();
-
-
-
-
-
-	public static   String ejecutarFuncion () {
-		println "inicio"
-
-		//		int i =0
-		//		for (;;) {
-		//			//			 println i  + ", "
-		//			i++
-		//		}
-		Thread.sleep(2000);
-
-		//println "Se completo"
-		return "Obtuvo respuesta"
-	}
-
 	static main(args) {
-		//		ExecutorService executor = Executors.newFixedThreadPool(10);
-		//		println "FIN 1"
-		//		return
-
-//		final Duration timeout = Duration.ofSeconds(3);
-//		ExecutorService executor = Executors.newSingleThreadExecutor();
-//
-//		final Future<String> handler = executor.submit(new Callable() {
-//					@Override
-//					public String call() throws Exception {
-//						return ejecutarFuncion ()
-//					}
-//				});
-//
-//		try {
-//
-//			  println 	handler.get(timeout.toMillis(), TimeUnit.MILLISECONDS);
-//
-//		} catch (TimeoutException e) {
-//			println "No se completo"
-//			handler.cancel(true);
-//		}
-//		executor.shutdown();
-//		println "fin"
-//		System.exit(1)
-//		return
-		//        String trama ="013000000036542000621820=18055011505000467     022163 000000000010000000000009000000000000000000000001                                    00019115270620160430      JVZ00000000000JVZ000   300416B36542000621820^DANIEL LLERENA            ^180550115050000000000000467                                         "
-		//		String jar =Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "jar.ruta")
-		//		JarLector j = JarLector.getInstancia(jar.split(Constantes.SEPARADOR_PROPERTIES))
-		//		String tramaRespuesta =  j.executeMetodoSecuencia("obtieneClase(com.lectora.cnx.Envio)->ejecutaMetodo([0]>[]>Envio_requerimiento>[*192.168.100.18*&5000&99999&?&1&1])".replace("?", trama))
-		//		println tramaRespuesta
-		//
-		//		return
-
-		//System.out.println(" Memoria libre antes de limpieza:  "+ garbage.freeMemory() );
+// 
+//		String trama ="01,4000,0,PRB00000,1046,0,0,amaxpoint,0,0,3F@ENVIO"
+//		
+//		println trama.substring( 1 , 2);
+//		return 
+		println "Iniciando Servicio..."
 		// Creo Conexion SQl SERVER
 		ConexionSqlServer conexion = ConexionSqlServer.getInstance()
 		conexion.obtenerConexion()
@@ -91,8 +44,8 @@ public class Main {
 		// Constuye el archivo de configuración .properties que contiene las configuraciones para el envio de requerimientos de pagos con tarjeta.
 		ArchivoProperties p = new ArchivoProperties()
 		p.oCnn = conexion
-//  p.construir()
-// 		return 
+	    p.construir()
+		//  return 
     
 		def speed=   Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  Constantes.TIMER_LOOP_APP)
 		int sTiempo = Integer.parseInt(speed)
@@ -100,7 +53,8 @@ public class Main {
 		Despachador.ocnn = conexion
 
 		garbage.gc()
-		System.out.println("Memoria libre desp de limpieza:  "+ garbage.freeMemory() );
+		System.out.println("Memoria Liberada:  "+ garbage.freeMemory() );
+	     println "Servicio Iniciado.."
 		while (true)
 		{
 			if (p.verificar() == 1)
@@ -115,7 +69,7 @@ public class Main {
 		try {
 			Despachador.despacharTarjeta(garbage)
 		} catch (Exception e) {
-			println "Error en el servicio (no controlado.!!)" + e.getMessage()
+			println "Exception dentro del servicio (!controlado)" + e.getMessage()
 			Despachador.ocnn = null ;
 			garbage.gc()
 		}

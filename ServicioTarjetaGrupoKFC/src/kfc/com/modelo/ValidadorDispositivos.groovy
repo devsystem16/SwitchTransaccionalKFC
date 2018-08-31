@@ -37,8 +37,7 @@ public class ValidadorDispositivos {
 	}
 
 	public static void   DispositivoConectadoIP (String ip) {
-
-		  ip = "192.168.100.8";
+ 
         try {
             InetAddress ping = InetAddress.getByName(ip);
             if (ping.isReachable(2000)) {

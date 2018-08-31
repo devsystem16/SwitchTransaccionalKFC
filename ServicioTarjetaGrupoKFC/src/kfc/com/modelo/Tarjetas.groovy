@@ -83,11 +83,11 @@ class Tarjetas {
 
 
 			JarLector jl = new JarLector()
-			String secuenciaValidacion = Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC, Constantes.VALIDADOR_CONEXION_DISPOSITIVO)
+			String secuenciaValidacion = Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.VALIDADOR_CONEXION_DISPOSITIVO)
 
 			boolean estado = false
 			if (secuenciaValidacion !="") {
-				estado = jl.executeMetodoSecuencia( secuenciaValidacion )
+				estado = jl.executeMetodoSecuencia(secuenciaValidacion, respuestaSwitch)
 			}else {
 				estado = true
 			}
@@ -102,17 +102,19 @@ class Tarjetas {
 				// REFLEXION PARA ENVIAR TRAMA Y RETORNA UNA TRAMA.
 				String jar =Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "jar.ruta")
 				JarLector j = JarLector.getInstancia(jar.split(Constantes.SEPARADOR_PROPERTIES))
+				j.ocnn = ocnn
 
-		
 				String tramaRespuesta =""
- 
+
 				final Duration timeout = Duration.ofSeconds( requerimiento.getTimeOut() )
 				ExecutorService executor = Executors.newSingleThreadExecutor()
 
 				final Future<String> handler = executor.submit(new Callable() {
 							@Override
 							public String call() throws Exception {
-								return j.executeMetodoSecuencia(lineasDeEjecucion)
+							  return j.executeMetodoSecuencia(lineasDeEjecucion, respuestaSwitch)
+								//return j.executeMetodoSecuencia("obtieneClaseNI(com.credibanco.entidades.EnvioProcesoPago[])->asignaAtributo([0]>TipoTransaccion,RedAdquirente,CodigoDiferido)->ejecutaMetodo(obtieneClase(com.credibanco.entidades.LAN)>[]>ProcesoPago>[[1]])->creaTrama([2])" ,respuestaSwitch )
+								//						         return j.executeMetodoSecuencia("obtieneClaseNI(DF.LANConfig[120.17.6.1>3000>99999>1000000101>10100402>CID123456>1>1])->obtieneClaseNI(DF.EnvioProcesoPago[[0]])->ejecutaMetodo(obtieneClase(DF.LAN)>[[0]]>ProcesoPago>[[1]])" )//lineasDeEjecucion)
 							}
 						})
 				try {
@@ -125,7 +127,7 @@ class Tarjetas {
 				executor.shutdown()
 
 
-					 // Si no se obtubo un time out procesar respuesta.
+				// Si no se obtubo un time out procesar respuesta.
 				if (!TIME_OUT) {
 					println "Response: ${tramaRespuesta}"
 					LogsApp.getInstance().Escribir("Respuesta obtenida: ${tramaRespuesta}")
@@ -136,10 +138,9 @@ class Tarjetas {
 					LogsApp.getInstance().Escribir("Se obtubo un TIME_OUT esperando respuesta")
 				}
 
-
-
 			}else {
-				respuestaSwitch.insetarBug("Dispositivo No conectado");
+
+				respuestaSwitch.insetarBug("Problemas por conexión con el dispositivo [${requerimiento.medioAutorizador}]");
 				println "DIspositivo no conectado"
 			}
 

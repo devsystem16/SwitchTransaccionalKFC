@@ -1,0 +1,442 @@
+29-08-2018 09:27:47 - ################################################################
+29-08-2018 09:27:47 - Procesando ID Canal Movimineto :C8D078B2-97AB-E811-810A-00505686417C
+29-08-2018 09:27:48 - Actualiza estado de Canal Moviminetos 61 :C8D078B2-97AB-E811-810A-00505686417C
+29-08-2018 09:27:48 - Actualiza estado de Requerimineto 61 :614
+29-08-2018 09:27:48 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,967,0,296,amaxpoint,0,0,09])
+29-08-2018 09:27:49 - Respuesta obtenida: com.credibanco.tef.controller.DatafonoSerialTefAuthorizationManager@75a34363
+29-08-2018 09:27:49 - [Mensaje de respuesta]  Codigo:  ER, Mensaje:  Mensaje no especificado. ,   Secuencia:  insertar 
+29-08-2018 09:27:49 - Ejecion recursiva iniciada.
+29-08-2018 09:27:49 - Ejecutando secuencia segun mensajes de respuesta  intentos> 2 falntantes: : insertar
+29-08-2018 09:27:49 - ------------Exception:  java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+29-08-2018 09:28:16 - ################################################################
+29-08-2018 09:28:16 - Procesando ID Canal Movimineto :920E01C3-97AB-E811-810A-00505686417C
+29-08-2018 09:28:16 - Actualiza estado de Canal Moviminetos 61 :920E01C3-97AB-E811-810A-00505686417C
+29-08-2018 09:28:16 - Actualiza estado de Requerimineto 61 :615
+29-08-2018 09:28:26 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,968,0,296,amaxpoint,0,0,06])
+29-08-2018 09:29:26 - Se obtubo un TIME_OUT esperando respuesta
+29-08-2018 09:29:26 - Actualizar a estado 42 ID: 920E01C3-97AB-E811-810A-00505686417C
+29-08-2018 09:31:14 - ################################################################
+29-08-2018 09:31:14 - Procesando ID Canal Movimineto :E7B3712C-98AB-E811-810A-00505686417C
+29-08-2018 09:31:14 - Actualiza estado de Canal Moviminetos 61 :E7B3712C-98AB-E811-810A-00505686417C
+29-08-2018 09:31:15 - Actualiza estado de Requerimineto 61 :616
+29-08-2018 09:31:22 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,969,0,296,amaxpoint,0,0,07])
+29-08-2018 09:32:23 - Se obtubo un TIME_OUT esperando respuesta
+29-08-2018 09:32:23 - Actualizar a estado 42 ID: E7B3712C-98AB-E811-810A-00505686417C
+29-08-2018 09:34:05 - ################################################################
+29-08-2018 09:34:05 - Procesando ID Canal Movimineto :C3C88C93-98AB-E811-810A-00505686417C
+29-08-2018 09:34:05 - Actualiza estado de Canal Moviminetos 61 :C3C88C93-98AB-E811-810A-00505686417C
+29-08-2018 09:34:05 - Actualiza estado de Requerimineto 61 :617
+29-08-2018 09:34:15 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,970,0,296,amaxpoint,0,0,0F])
+29-08-2018 09:35:15 - Se obtubo un TIME_OUT esperando respuesta
+29-08-2018 09:35:15 - Actualizar a estado 42 ID: C3C88C93-98AB-E811-810A-00505686417C
+29-08-2018 09:36:03 - ################################################################
+29-08-2018 09:36:03 - Procesando ID Canal Movimineto :A497D2D9-98AB-E811-810A-00505686417C
+29-08-2018 09:36:03 - Actualiza estado de Canal Moviminetos 61 :A497D2D9-98AB-E811-810A-00505686417C
+29-08-2018 09:36:03 - Actualiza estado de Requerimineto 61 :618
+29-08-2018 09:36:03 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,971,0,296,amaxpoint,0,0,0E])
+29-08-2018 09:36:39 - Respuesta obtenida: 00,403451,000000004000,000000000000,PRB00000  ,000220,000385,00018487,000829,0936,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7a
+29-08-2018 09:36:39 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 09:36:39 - si cumple longitud - Trama insertada mediante ejecución normal: 00,403451,000000004000,000000000000,PRB00000  ,000220,000385,00018487,000829,0936,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7a
+29-08-2018 09:36:39 - Actualizar a estado 42 ID: A497D2D9-98AB-E811-810A-00505686417C
+29-08-2018 09:47:56 - ################################################################
+29-08-2018 09:47:56 - Procesando ID Canal Movimineto :7D8D3783-9AAB-E811-810A-00505686417C
+29-08-2018 09:47:56 - Actualiza estado de Canal Moviminetos 61 :7D8D3783-9AAB-E811-810A-00505686417C
+29-08-2018 09:47:56 - Actualiza estado de Requerimineto 61 :619
+29-08-2018 09:47:56 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,972,0,296,amaxpoint,0,0,0D])
+29-08-2018 09:48:03 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 09:48:03 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 09:48:03 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 09:48:03 - Actualizar a estado 42 ID: 7D8D3783-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:07 - ################################################################
+29-08-2018 09:49:07 - Procesando ID Canal Movimineto :081A32AD-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:07 - Actualiza estado de Canal Moviminetos 61 :081A32AD-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:07 - Actualiza estado de Requerimineto 61 :620
+29-08-2018 09:49:07 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,973,0,296,amaxpoint,0,0,0C])
+29-08-2018 09:49:15 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 09:49:15 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 09:49:15 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 09:49:15 - Actualizar a estado 42 ID: 081A32AD-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:27 - ################################################################
+29-08-2018 09:49:27 - Procesando ID Canal Movimineto :0C5121B8-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:27 - Actualiza estado de Canal Moviminetos 61 :0C5121B8-9AAB-E811-810A-00505686417C
+29-08-2018 09:49:27 - Actualiza estado de Requerimineto 61 :621
+29-08-2018 09:49:27 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,974,0,296,amaxpoint,0,0,0B])
+29-08-2018 09:49:32 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 09:49:32 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 09:49:32 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 09:49:32 - Actualizar a estado 42 ID: 0C5121B8-9AAB-E811-810A-00505686417C
+29-08-2018 11:18:54 - ################################################################
+29-08-2018 11:18:54 - Procesando ID Canal Movimineto :A1FACA37-A7AB-E811-810A-00505686417C
+29-08-2018 11:18:54 - Actualiza estado de Canal Moviminetos 61 :A1FACA37-A7AB-E811-810A-00505686417C
+29-08-2018 11:18:54 - Actualiza estado de Requerimineto 61 :622
+29-08-2018 11:18:54 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,20000,0,PRB00000,975,0,1481,jfernandez,0,0,75])
+29-08-2018 11:19:25 - Respuesta obtenida: 00,703246,000000020000,000000000000,PRB00000  ,000221,000386,00018487,000829,1119,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,79
+29-08-2018 11:19:25 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:19:25 - si cumple longitud - Trama insertada mediante ejecución normal: 00,703246,000000020000,000000000000,PRB00000  ,000221,000386,00018487,000829,1119,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,79
+29-08-2018 11:19:25 - Actualizar a estado 42 ID: A1FACA37-A7AB-E811-810A-00505686417C
+29-08-2018 11:19:40 - ################################################################
+29-08-2018 11:19:40 - Procesando ID Canal Movimineto :34802D4D-A7AB-E811-810A-00505686417C
+29-08-2018 11:19:40 - Actualiza estado de Canal Moviminetos 61 :34802D4D-A7AB-E811-810A-00505686417C
+29-08-2018 11:19:40 - Actualiza estado de Requerimineto 61 :623
+29-08-2018 11:19:40 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,50000,0,PRB00000,976,0,3704,jfernandez,0,0,7D])
+29-08-2018 11:19:50 - Respuesta obtenida: 05,,000000050000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,70
+29-08-2018 11:19:50 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 11:19:50 - Se auto completo la trama: 05,      ,000000050000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,70
+29-08-2018 11:19:50 - Actualizar a estado 42 ID: 34802D4D-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:02 - ################################################################
+29-08-2018 11:20:02 - Procesando ID Canal Movimineto :30046760-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:02 - Actualiza estado de Canal Moviminetos 61 :30046760-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:02 - Actualiza estado de Requerimineto 61 :624
+29-08-2018 11:20:02 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,50000,0,PRB00000,977,0,3704,jfernandez,0,0,7C])
+29-08-2018 11:20:28 - Respuesta obtenida: 00,932663,000000050000,000000000000,PRB00000  ,000222,000387,00018487,000829,1120,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,79
+29-08-2018 11:20:28 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:20:28 - si cumple longitud - Trama insertada mediante ejecución normal: 00,932663,000000050000,000000000000,PRB00000  ,000222,000387,00018487,000829,1120,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,79
+29-08-2018 11:20:28 - Actualizar a estado 42 ID: 30046760-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:37 - ################################################################
+29-08-2018 11:20:37 - Procesando ID Canal Movimineto :F256CD72-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:37 - Actualiza estado de Canal Moviminetos 61 :F256CD72-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:37 - Actualiza estado de Requerimineto 61 :625
+29-08-2018 11:20:37 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,222,0000000978,jfernandez,0,0,6B])
+29-08-2018 11:20:48 - Respuesta obtenida: 03,,,,00jfernandez,000222,,,,,,,,,,,,,,,,,00
+29-08-2018 11:20:48 - [Mensaje de respuesta]  Codigo:  03, Mensaje:  Transaccion sin respuesta final del datafono DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:20:48 - Se auto completo la trama: 03,      ,            ,            ,00jfernandez,000222,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,00
+29-08-2018 11:20:48 - Actualizar a estado 42 ID: F256CD72-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:54 - ################################################################
+29-08-2018 11:20:54 - Procesando ID Canal Movimineto :6F8A0D80-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:54 - Actualiza estado de Canal Moviminetos 61 :6F8A0D80-A7AB-E811-810A-00505686417C
+29-08-2018 11:20:54 - Actualiza estado de Requerimineto 61 :626
+29-08-2018 11:20:54 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,222,0000000979,jfernandez,0,0,6A])
+29-08-2018 11:21:12 - Respuesta obtenida: 00,932663,000000050000,000000000000,00jfernandez,000222,000388,00018487,000829,1121,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,06
+29-08-2018 11:21:12 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:21:12 - si cumple longitud - Trama insertada mediante ejecución normal: 00,932663,000000050000,000000000000,00jfernandez,000222,000388,00018487,000829,1121,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,06
+29-08-2018 11:21:12 - Actualizar a estado 42 ID: 6F8A0D80-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:24 - ################################################################
+29-08-2018 11:21:24 - Procesando ID Canal Movimineto :9570858D-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:24 - Actualiza estado de Canal Moviminetos 61 :9570858D-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:24 - Actualiza estado de Requerimineto 61 :627
+29-08-2018 11:21:24 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,221,0000000980,jfernandez,0,0,6F])
+29-08-2018 11:21:44 - Respuesta obtenida: 00,703246,000000020000,000000000000,00jfernandez,000221,000389,00018487,000829,1121,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0c
+29-08-2018 11:21:44 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:21:44 - si cumple longitud - Trama insertada mediante ejecución normal: 00,703246,000000020000,000000000000,00jfernandez,000221,000389,00018487,000829,1121,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0c
+29-08-2018 11:21:44 - Actualizar a estado 42 ID: 9570858D-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:59 - ################################################################
+29-08-2018 11:21:59 - Procesando ID Canal Movimineto :5329A9A6-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:59 - Actualiza estado de Canal Moviminetos 61 :5329A9A6-A7AB-E811-810A-00505686417C
+29-08-2018 11:21:59 - Actualiza estado de Requerimineto 61 :628
+29-08-2018 11:21:59 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,50000,0,PRB00000,981,0,3704,jfernandez,0,0,75])
+29-08-2018 11:22:20 - Respuesta obtenida: 00,277518,000000050000,000000000000,PRB00000  ,000225,000390,00018487,000829,1122,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7f
+29-08-2018 11:22:20 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:22:20 - si cumple longitud - Trama insertada mediante ejecución normal: 00,277518,000000050000,000000000000,PRB00000  ,000225,000390,00018487,000829,1122,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7f
+29-08-2018 11:22:20 - Actualizar a estado 42 ID: 5329A9A6-A7AB-E811-810A-00505686417C
+29-08-2018 11:22:32 - ################################################################
+29-08-2018 11:22:32 - Procesando ID Canal Movimineto :1C031BB5-A7AB-E811-810A-00505686417C
+29-08-2018 11:22:32 - Actualiza estado de Canal Moviminetos 61 :1C031BB5-A7AB-E811-810A-00505686417C
+29-08-2018 11:22:32 - Actualiza estado de Requerimineto 61 :629
+29-08-2018 11:22:32 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,30000,0,PRB00000,982,0,2222,jfernandez,0,0,70])
+29-08-2018 11:22:42 - Respuesta obtenida: 05,,000000030000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,76
+29-08-2018 11:22:42 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 11:22:42 - Se auto completo la trama: 05,      ,000000030000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,76
+29-08-2018 11:22:42 - Actualizar a estado 42 ID: 1C031BB5-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:16 - ################################################################
+29-08-2018 11:23:16 - Procesando ID Canal Movimineto :B3704CD3-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:16 - Actualiza estado de Canal Moviminetos 61 :B3704CD3-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:16 - Actualiza estado de Requerimineto 61 :630
+29-08-2018 11:23:16 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,30000,0,PRB00000,983,0,2222,jfernandez,0,0,71])
+29-08-2018 11:23:41 - Respuesta obtenida: 03,,000000030000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,70
+29-08-2018 11:23:41 - [Mensaje de respuesta]  Codigo:  03, Mensaje:  Transaccion sin respuesta final del datafono DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:23:41 - Se auto completo la trama: 03,      ,000000030000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,70
+29-08-2018 11:23:41 - Actualizar a estado 42 ID: B3704CD3-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:53 - ################################################################
+29-08-2018 11:23:53 - Procesando ID Canal Movimineto :75DDAEE9-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:53 - Actualiza estado de Canal Moviminetos 61 :75DDAEE9-A7AB-E811-810A-00505686417C
+29-08-2018 11:23:53 - Actualiza estado de Requerimineto 61 :631
+29-08-2018 11:23:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,50000,0,PRB00000,984,0,3704,jfernandez,0,0,70])
+29-08-2018 11:24:09 - Respuesta obtenida: 05,,000000050000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,70
+29-08-2018 11:24:09 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 11:24:09 - Se auto completo la trama: 05,      ,000000050000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,70
+29-08-2018 11:24:09 - Actualizar a estado 42 ID: 75DDAEE9-A7AB-E811-810A-00505686417C
+29-08-2018 11:24:18 - ################################################################
+29-08-2018 11:24:18 - Procesando ID Canal Movimineto :ADF01EF9-A7AB-E811-810A-00505686417C
+29-08-2018 11:24:18 - Actualiza estado de Canal Moviminetos 61 :ADF01EF9-A7AB-E811-810A-00505686417C
+29-08-2018 11:24:18 - Actualiza estado de Requerimineto 61 :632
+29-08-2018 11:24:18 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,50000,0,PRB00000,985,0,3704,jfernandez,0,0,71])
+29-08-2018 11:24:44 - Respuesta obtenida: 00,850432,000000050000,000000000000,PRB00000  ,000226,000391,00018487,000829,1124,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7d
+29-08-2018 11:24:44 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:24:44 - si cumple longitud - Trama insertada mediante ejecución normal: 00,850432,000000050000,000000000000,PRB00000  ,000226,000391,00018487,000829,1124,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7d
+29-08-2018 11:24:44 - Actualizar a estado 42 ID: ADF01EF9-A7AB-E811-810A-00505686417C
+29-08-2018 11:26:30 - ################################################################
+29-08-2018 11:26:30 - Procesando ID Canal Movimineto :BE9B1348-A8AB-E811-810A-00505686417C
+29-08-2018 11:26:30 - Actualiza estado de Canal Moviminetos 61 :BE9B1348-A8AB-E811-810A-00505686417C
+29-08-2018 11:26:30 - Actualiza estado de Requerimineto 61 :633
+29-08-2018 11:26:30 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,225,0000000986,jfernandez,0,0,6D])
+29-08-2018 11:26:45 - Respuesta obtenida: 00,277518,000000050000,000000000000,00jfernandez,000225,000392,00018487,000829,1126,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,08
+29-08-2018 11:26:45 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:26:45 - si cumple longitud - Trama insertada mediante ejecución normal: 00,277518,000000050000,000000000000,00jfernandez,000225,000392,00018487,000829,1126,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,08
+29-08-2018 11:26:45 - Actualizar a estado 42 ID: BE9B1348-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:22 - ################################################################
+29-08-2018 11:27:22 - Procesando ID Canal Movimineto :91827266-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:22 - Actualiza estado de Canal Moviminetos 61 :91827266-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:22 - Actualiza estado de Requerimineto 61 :634
+29-08-2018 11:27:22 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,225,0000000987,jfernandez,0,0,6C])
+29-08-2018 11:27:29 - Respuesta obtenida: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0c
+29-08-2018 11:27:29 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:27:29 - Se auto completo la trama: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0c
+29-08-2018 11:27:29 - Actualizar a estado 42 ID: 91827266-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:59 - ################################################################
+29-08-2018 11:27:59 - Procesando ID Canal Movimineto :78B3AF7C-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:59 - Actualiza estado de Canal Moviminetos 61 :78B3AF7C-A8AB-E811-810A-00505686417C
+29-08-2018 11:27:59 - Actualiza estado de Requerimineto 61 :635
+29-08-2018 11:27:59 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,225,0000000988,jfernandez,0,0,63])
+29-08-2018 11:28:14 - Respuesta obtenida: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0c
+29-08-2018 11:28:14 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:28:14 - Se auto completo la trama: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0c
+29-08-2018 11:28:14 - Actualizar a estado 42 ID: 78B3AF7C-A8AB-E811-810A-00505686417C
+29-08-2018 11:33:12 - ################################################################
+29-08-2018 11:33:12 - Procesando ID Canal Movimineto :55B1E937-A9AB-E811-810A-00505686417C
+29-08-2018 11:33:12 - Actualiza estado de Canal Moviminetos 61 :55B1E937-A9AB-E811-810A-00505686417C
+29-08-2018 11:33:12 - Actualiza estado de Requerimineto 61 :636
+29-08-2018 11:33:12 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,225,0000000989,jfernandez,0,0,62])
+29-08-2018 11:33:20 - Respuesta obtenida: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0c
+29-08-2018 11:33:20 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:33:20 - Se auto completo la trama: 02,      ,000000050000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0c
+29-08-2018 11:33:20 - Actualizar a estado 42 ID: 55B1E937-A9AB-E811-810A-00505686417C
+29-08-2018 11:34:05 - ################################################################
+29-08-2018 11:34:05 - Procesando ID Canal Movimineto :DD8F4057-A9AB-E811-810A-00505686417C
+29-08-2018 11:34:05 - Actualiza estado de Canal Moviminetos 61 :DD8F4057-A9AB-E811-810A-00505686417C
+29-08-2018 11:34:05 - Actualiza estado de Requerimineto 61 :637
+29-08-2018 11:34:05 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,14900,0,PRB00000,990,0,1104,jfernandez,0,0,78])
+29-08-2018 11:34:39 - Respuesta obtenida: 00,620203,000000014900,000000000000,PRB00000  ,000228,000393,00018487,000829,1134,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,74
+29-08-2018 11:34:39 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:34:39 - si cumple longitud - Trama insertada mediante ejecución normal: 00,620203,000000014900,000000000000,PRB00000  ,000228,000393,00018487,000829,1134,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,74
+29-08-2018 11:34:39 - Actualizar a estado 42 ID: DD8F4057-A9AB-E811-810A-00505686417C
+29-08-2018 11:35:18 - ################################################################
+29-08-2018 11:35:18 - Procesando ID Canal Movimineto :EB84CE81-A9AB-E811-810A-00505686417C
+29-08-2018 11:35:18 - Actualiza estado de Canal Moviminetos 61 :EB84CE81-A9AB-E811-810A-00505686417C
+29-08-2018 11:35:18 - Actualiza estado de Requerimineto 61 :638
+29-08-2018 11:35:18 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,228,0000000991,jfernandez,0,0,66])
+29-08-2018 11:35:33 - Respuesta obtenida: 00,620203,000000014900,000000000000,00jfernandez,000228,000394,00018487,000829,1135,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,03
+29-08-2018 11:35:33 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:35:33 - si cumple longitud - Trama insertada mediante ejecución normal: 00,620203,000000014900,000000000000,00jfernandez,000228,000394,00018487,000829,1135,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,03
+29-08-2018 11:35:33 - Actualizar a estado 42 ID: EB84CE81-A9AB-E811-810A-00505686417C
+29-08-2018 11:38:15 - ################################################################
+29-08-2018 11:38:15 - Procesando ID Canal Movimineto :7351D6E7-A9AB-E811-810A-00505686417C
+29-08-2018 11:38:15 - Actualiza estado de Canal Moviminetos 61 :7351D6E7-A9AB-E811-810A-00505686417C
+29-08-2018 11:38:15 - Actualiza estado de Requerimineto 61 :639
+29-08-2018 11:38:15 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,15000,0,PRB00000,992,0,1111,jfernandez,0,0,76])
+29-08-2018 11:38:40 - Respuesta obtenida: 00,630414,000000015000,000000000000,PRB00000  ,000230,000395,00018487,000829,1138,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7e
+29-08-2018 11:38:40 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:38:40 - si cumple longitud - Trama insertada mediante ejecución normal: 00,630414,000000015000,000000000000,PRB00000  ,000230,000395,00018487,000829,1138,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7e
+29-08-2018 11:38:40 - Actualizar a estado 42 ID: 7351D6E7-A9AB-E811-810A-00505686417C
+29-08-2018 11:38:52 - ################################################################
+29-08-2018 11:38:52 - Procesando ID Canal Movimineto :36EC3900-AAAB-E811-810A-00505686417C
+29-08-2018 11:38:52 - Actualiza estado de Canal Moviminetos 61 :36EC3900-AAAB-E811-810A-00505686417C
+29-08-2018 11:38:52 - Actualiza estado de Requerimineto 61 :640
+29-08-2018 11:38:52 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,230,0000000993,jfernandez,0,0,6D])
+29-08-2018 11:39:10 - Respuesta obtenida: 00,630414,000000015000,000000000000,00jfernandez,000230,000396,00018487,000829,1139,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0d
+29-08-2018 11:39:10 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:39:10 - si cumple longitud - Trama insertada mediante ejecución normal: 00,630414,000000015000,000000000000,00jfernandez,000230,000396,00018487,000829,1139,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0d
+29-08-2018 11:39:10 - Actualizar a estado 42 ID: 36EC3900-AAAB-E811-810A-00505686417C
+29-08-2018 11:39:22 - ################################################################
+29-08-2018 11:39:22 - Procesando ID Canal Movimineto :2B4A860F-AAAB-E811-810A-00505686417C
+29-08-2018 11:39:22 - Actualiza estado de Canal Moviminetos 61 :2B4A860F-AAAB-E811-810A-00505686417C
+29-08-2018 11:39:22 - Actualiza estado de Requerimineto 61 :641
+29-08-2018 11:39:22 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,13500,0,PRB00000,994,0,1000,jfernandez,0,0,72])
+29-08-2018 11:39:32 - Respuesta obtenida: 05,,000000013500,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,72
+29-08-2018 11:39:32 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 11:39:32 - Se auto completo la trama: 05,      ,000000013500,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,72
+29-08-2018 11:39:32 - Actualizar a estado 42 ID: 2B4A860F-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:05 - ################################################################
+29-08-2018 11:42:05 - Procesando ID Canal Movimineto :494B3375-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:05 - Actualiza estado de Canal Moviminetos 61 :494B3375-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:05 - Actualiza estado de Requerimineto 61 :642
+29-08-2018 11:42:05 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,15300,0,PRB00000,995,0,1133,jfernandez,0,0,72])
+29-08-2018 11:42:28 - Respuesta obtenida: 00,743193,000000015300,000000000000,PRB00000  ,000232,000397,00018487,000829,1142,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7f
+29-08-2018 11:42:28 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:42:28 - si cumple longitud - Trama insertada mediante ejecución normal: 00,743193,000000015300,000000000000,PRB00000  ,000232,000397,00018487,000829,1142,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7f
+29-08-2018 11:42:28 - Actualizar a estado 42 ID: 494B3375-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:53 - ################################################################
+29-08-2018 11:42:53 - Procesando ID Canal Movimineto :C9201C91-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:53 - Actualiza estado de Canal Moviminetos 61 :C9201C91-AAAB-E811-810A-00505686417C
+29-08-2018 11:42:53 - Actualiza estado de Requerimineto 61 :643
+29-08-2018 11:42:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,5000,0,PRB00000,996,0,370,jfernandez,0,0,77])
+29-08-2018 11:43:12 - Respuesta obtenida: 00,566415,000000005000,000000000000,PRB00000  ,000233,000398,00018487,000829,1143,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7c
+29-08-2018 11:43:12 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:43:12 - si cumple longitud - Trama insertada mediante ejecución normal: 00,566415,000000005000,000000000000,PRB00000  ,000233,000398,00018487,000829,1143,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,7c
+29-08-2018 11:43:12 - Actualizar a estado 42 ID: C9201C91-AAAB-E811-810A-00505686417C
+29-08-2018 11:43:45 - ################################################################
+29-08-2018 11:43:45 - Procesando ID Canal Movimineto :2F1BE9B0-AAAB-E811-810A-00505686417C
+29-08-2018 11:43:45 - Actualiza estado de Canal Moviminetos 61 :2F1BE9B0-AAAB-E811-810A-00505686417C
+29-08-2018 11:43:45 - Actualiza estado de Requerimineto 61 :644
+29-08-2018 11:43:45 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000000997,jfernandez,0,0,6B])
+29-08-2018 11:43:55 - Respuesta obtenida: 03,,,,00jfernandez,000232,,,,,,,,,,,,,,,,,01
+29-08-2018 11:43:55 - [Mensaje de respuesta]  Codigo:  03, Mensaje:  Transaccion sin respuesta final del datafono DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:43:55 - Se auto completo la trama: 03,      ,            ,            ,00jfernandez,000232,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,01
+29-08-2018 11:43:55 - Actualizar a estado 42 ID: 2F1BE9B0-AAAB-E811-810A-00505686417C
+29-08-2018 11:44:01 - ################################################################
+29-08-2018 11:44:01 - Procesando ID Canal Movimineto :020088BA-AAAB-E811-810A-00505686417C
+29-08-2018 11:44:01 - Actualiza estado de Canal Moviminetos 61 :020088BA-AAAB-E811-810A-00505686417C
+29-08-2018 11:44:01 - Actualiza estado de Requerimineto 61 :645
+29-08-2018 11:44:01 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000000998,jfernandez,0,0,64])
+29-08-2018 11:44:24 - Respuesta obtenida: 00,743193,000000015300,000000000000,00jfernandez,000232,000399,00018487,000829,1144,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,06
+29-08-2018 11:44:24 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:44:24 - si cumple longitud - Trama insertada mediante ejecución normal: 00,743193,000000015300,000000000000,00jfernandez,000232,000399,00018487,000829,1144,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,06
+29-08-2018 11:44:24 - Actualizar a estado 42 ID: 020088BA-AAAB-E811-810A-00505686417C
+29-08-2018 11:46:18 - ################################################################
+29-08-2018 11:46:18 - Procesando ID Canal Movimineto :6554530C-ABAB-E811-810A-00505686417C
+29-08-2018 11:46:18 - Actualiza estado de Canal Moviminetos 61 :6554530C-ABAB-E811-810A-00505686417C
+29-08-2018 11:46:18 - Actualiza estado de Requerimineto 61 :646
+29-08-2018 11:46:18 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,233,0000000999,jfernandez,0,0,64])
+29-08-2018 11:46:35 - Respuesta obtenida: 00,566415,000000005000,000000000000,00jfernandez,000233,000400,00018487,000829,1146,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0e
+29-08-2018 11:46:35 - [Mensaje de respuesta]  Codigo:  00, Mensaje:  Transaccion Aprobada DATAFONO ,   Secuencia:  APROBADA 
+29-08-2018 11:46:35 - si cumple longitud - Trama insertada mediante ejecución normal: 00,566415,000000005000,000000000000,00jfernandez,000233,000400,00018487,000829,1146,00,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,000000000000,000000000000,0e
+29-08-2018 11:46:35 - Actualizar a estado 42 ID: 6554530C-ABAB-E811-810A-00505686417C
+29-08-2018 11:47:53 - ################################################################
+29-08-2018 11:47:53 - Procesando ID Canal Movimineto :68CFB544-ABAB-E811-810A-00505686417C
+29-08-2018 11:47:53 - Actualiza estado de Canal Moviminetos 61 :68CFB544-ABAB-E811-810A-00505686417C
+29-08-2018 11:47:53 - Actualiza estado de Requerimineto 61 :647
+29-08-2018 11:47:53 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000001000,jfernandez,0,0,6D])
+29-08-2018 11:48:01 - Respuesta obtenida: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0e
+29-08-2018 11:48:01 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:48:01 - Se auto completo la trama: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0e
+29-08-2018 11:48:01 - Actualizar a estado 42 ID: 68CFB544-ABAB-E811-810A-00505686417C
+29-08-2018 11:51:26 - ################################################################
+29-08-2018 11:51:26 - Procesando ID Canal Movimineto :D42558C3-ABAB-E811-810A-00505686417C
+29-08-2018 11:51:26 - Actualiza estado de Canal Moviminetos 61 :D42558C3-ABAB-E811-810A-00505686417C
+29-08-2018 11:51:26 - Actualiza estado de Requerimineto 61 :648
+29-08-2018 11:51:26 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000001001,jfernandez,0,0,6C])
+29-08-2018 11:51:34 - Respuesta obtenida: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0e
+29-08-2018 11:51:34 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:51:34 - Se auto completo la trama: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0e
+29-08-2018 11:51:34 - Actualizar a estado 42 ID: D42558C3-ABAB-E811-810A-00505686417C
+29-08-2018 11:54:34 - ################################################################
+29-08-2018 11:54:34 - Procesando ID Canal Movimineto :67B6B032-ACAB-E811-810A-00505686417C
+29-08-2018 11:54:34 - Actualiza estado de Canal Moviminetos 61 :67B6B032-ACAB-E811-810A-00505686417C
+29-08-2018 11:54:34 - Actualiza estado de Requerimineto 61 :649
+29-08-2018 11:54:34 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000001002,jfernandez,0,0,6F])
+29-08-2018 11:54:43 - Respuesta obtenida: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0e
+29-08-2018 11:54:43 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:54:43 - Se auto completo la trama: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0e
+29-08-2018 11:54:43 - Actualizar a estado 42 ID: 67B6B032-ACAB-E811-810A-00505686417C
+29-08-2018 11:56:04 - ################################################################
+29-08-2018 11:56:04 - Procesando ID Canal Movimineto :7159CA69-ACAB-E811-810A-00505686417C
+29-08-2018 11:56:04 - Actualiza estado de Canal Moviminetos 61 :7159CA69-ACAB-E811-810A-00505686417C
+29-08-2018 11:56:04 - Actualiza estado de Requerimineto 61 :650
+29-08-2018 11:56:04 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000001003,jfernandez,0,0,6E])
+29-08-2018 11:56:13 - Respuesta obtenida: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0e
+29-08-2018 11:56:13 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:56:13 - Se auto completo la trama: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0e
+29-08-2018 11:56:13 - Actualizar a estado 42 ID: 7159CA69-ACAB-E811-810A-00505686417C
+29-08-2018 11:57:49 - ################################################################
+29-08-2018 11:57:49 - Procesando ID Canal Movimineto :B8BD3DA7-ACAB-E811-810A-00505686417C
+29-08-2018 11:57:49 - Actualiza estado de Canal Moviminetos 61 :B8BD3DA7-ACAB-E811-810A-00505686417C
+29-08-2018 11:57:49 - Actualiza estado de Requerimineto 61 :651
+29-08-2018 11:57:50 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,233,0000001004,jfernandez,0,0,68])
+29-08-2018 11:57:59 - Respuesta obtenida: 02,      ,000000005000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0c
+29-08-2018 11:57:59 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:57:59 - Se auto completo la trama: 02,      ,000000005000,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0c
+29-08-2018 11:57:59 - Actualizar a estado 42 ID: B8BD3DA7-ACAB-E811-810A-00505686417C
+29-08-2018 11:58:59 - ################################################################
+29-08-2018 11:58:59 - Procesando ID Canal Movimineto :E4C0D7D1-ACAB-E811-810A-00505686417C
+29-08-2018 11:58:59 - Actualiza estado de Canal Moviminetos 61 :E4C0D7D1-ACAB-E811-810A-00505686417C
+29-08-2018 11:58:59 - Actualiza estado de Requerimineto 61 :652
+29-08-2018 11:58:59 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[02,PRB00000,232,0000001005,jfernandez,0,0,68])
+29-08-2018 11:59:06 - Respuesta obtenida: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,,,0e
+29-08-2018 11:59:06 - [Mensaje de respuesta]  Codigo:  02, Mensaje:  Transaccion Negada Online DATAFONO ,   Secuencia:  INSERTAR 
+29-08-2018 11:59:06 - Se auto completo la trama: 02,      ,000000015300,000000000000,00jfernandez,000000,000000,00000000,000000,0000,XX,VISA G    ,CR,01,5209,400558,2112,012304481              ,ECUADOR                ,00,            ,            ,0e
+29-08-2018 11:59:06 - Actualizar a estado 42 ID: E4C0D7D1-ACAB-E811-810A-00505686417C
+29-08-2018 12:02:33 - ################################################################
+29-08-2018 12:02:33 - Procesando ID Canal Movimineto :AF3D3651-ADAB-E811-810A-00505686417C
+29-08-2018 12:02:33 - Actualiza estado de Canal Moviminetos 61 :AF3D3651-ADAB-E811-810A-00505686417C
+29-08-2018 12:02:33 - Actualiza estado de Requerimineto 61 :null
+29-08-2018 12:02:34 - ------------Exception:  Cannot invoke method toUpperCase() on null object
+29-08-2018 12:02:37 - ################################################################
+29-08-2018 12:02:37 - Procesando ID Canal Movimineto :B03D3651-ADAB-E811-810A-00505686417C
+29-08-2018 12:02:37 - Actualiza estado de Canal Moviminetos 61 :B03D3651-ADAB-E811-810A-00505686417C
+29-08-2018 12:02:37 - Actualiza estado de Requerimineto 61 :657
+29-08-2018 12:02:37 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1010,0,296,amaxpoint,0,0,31])
+29-08-2018 12:03:37 - Se obtubo un TIME_OUT esperando respuesta
+29-08-2018 12:03:37 - Actualizar a estado 42 ID: B03D3651-ADAB-E811-810A-00505686417C
+29-08-2018 12:06:29 - ################################################################
+29-08-2018 12:06:29 - Procesando ID Canal Movimineto :DF323ADD-ADAB-E811-810A-00505686417C
+29-08-2018 12:06:29 - Actualiza estado de Canal Moviminetos 61 :DF323ADD-ADAB-E811-810A-00505686417C
+29-08-2018 12:06:29 - Actualiza estado de Requerimineto 61 :660
+29-08-2018 12:06:54 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1013,0,296,amaxpoint,0,0,32])
+29-08-2018 12:07:54 - Se obtubo un TIME_OUT esperando respuesta
+29-08-2018 12:07:54 - Actualizar a estado 42 ID: DF323ADD-ADAB-E811-810A-00505686417C
+29-08-2018 12:08:57 - ################################################################
+29-08-2018 12:08:57 - Procesando ID Canal Movimineto :95864135-AEAB-E811-810A-00505686417C
+29-08-2018 12:08:57 - Actualiza estado de Canal Moviminetos 61 :95864135-AEAB-E811-810A-00505686417C
+29-08-2018 12:08:57 - Actualiza estado de Requerimineto 61 :661
+29-08-2018 12:08:57 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1014,0,296,amaxpoint,0,0,35])
+29-08-2018 12:23:22 - ################################################################
+29-08-2018 12:23:23 - Procesando ID Canal Movimineto :C278113A-B0AB-E811-810A-00505686417C
+29-08-2018 12:23:23 - Actualiza estado de Canal Moviminetos 61 :C278113A-B0AB-E811-810A-00505686417C
+29-08-2018 12:23:23 - Actualiza estado de Requerimineto 61 :669
+29-08-2018 12:23:23 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1022,0,296,amaxpoint,0,0,30])
+29-08-2018 12:27:22 - Respuesta obtenida: null
+29-08-2018 12:27:23 - [Mensaje de respuesta]  Codigo:  ER, Mensaje:  Mensaje no especificado. ,   Secuencia:  insertar 
+29-08-2018 12:27:23 - Ejecion recursiva iniciada.
+29-08-2018 12:27:23 - Ejecutando secuencia segun mensajes de respuesta  intentos> 2 falntantes: : insertar
+29-08-2018 12:29:30 - ################################################################
+29-08-2018 12:29:30 - Procesando ID Canal Movimineto :ADC5D410-B1AB-E811-810A-00505686417C
+29-08-2018 12:29:30 - Actualiza estado de Canal Moviminetos 61 :ADC5D410-B1AB-E811-810A-00505686417C
+29-08-2018 12:29:30 - Actualiza estado de Requerimineto 61 :670
+29-08-2018 12:29:31 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,24500,0,PRB00000,1023,0,1815,jfernandez,0,0,4E])
+29-08-2018 12:30:31 - ################################################################
+29-08-2018 12:30:31 - Procesando ID Canal Movimineto :6AF41933-B1AB-E811-810A-00505686417C
+29-08-2018 12:30:31 - Actualiza estado de Canal Moviminetos 61 :6AF41933-B1AB-E811-810A-00505686417C
+29-08-2018 12:30:31 - Actualiza estado de Requerimineto 61 :673
+29-08-2018 12:30:31 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1026,0,296,amaxpoint,0,0,34])
+29-08-2018 12:35:09 - ################################################################
+29-08-2018 12:35:09 - Procesando ID Canal Movimineto :3A2C16DE-B1AB-E811-810A-00505686417C
+29-08-2018 12:35:09 - Actualiza estado de Canal Moviminetos 61 :3A2C16DE-B1AB-E811-810A-00505686417C
+29-08-2018 12:35:09 - Actualiza estado de Requerimineto 61 :674
+29-08-2018 12:35:40 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1027,0,296,amaxpoint,0,0,35])
+29-08-2018 12:38:42 - ################################################################
+29-08-2018 12:38:42 - Procesando ID Canal Movimineto :51813C5D-B2AB-E811-810A-00505686417C
+29-08-2018 12:38:42 - Actualiza estado de Canal Moviminetos 61 :51813C5D-B2AB-E811-810A-00505686417C
+29-08-2018 12:38:42 - Actualiza estado de Requerimineto 61 :675
+29-08-2018 12:38:55 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1028,0,296,amaxpoint,0,0,3A])
+29-08-2018 12:40:13 - ################################################################
+29-08-2018 12:40:13 - Procesando ID Canal Movimineto :D6EB6093-B2AB-E811-810A-00505686417C
+29-08-2018 12:40:13 - Actualiza estado de Canal Moviminetos 61 :D6EB6093-B2AB-E811-810A-00505686417C
+29-08-2018 12:40:13 - Actualiza estado de Requerimineto 61 :676
+29-08-2018 12:40:18 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1029,0,296,amaxpoint,0,0,3B])
+29-08-2018 12:43:29 - ################################################################
+29-08-2018 12:43:29 - Procesando ID Canal Movimineto :57D39C08-B3AB-E811-810A-00505686417C
+29-08-2018 12:43:29 - Actualiza estado de Canal Moviminetos 61 :57D39C08-B3AB-E811-810A-00505686417C
+29-08-2018 12:43:29 - Actualiza estado de Requerimineto 61 :677
+29-08-2018 12:43:36 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1030,0,296,amaxpoint,0,0,33])
+29-08-2018 15:23:25 - ################################################################
+29-08-2018 15:23:25 - Procesando ID Canal Movimineto :AF1D2C61-C9AB-E811-810A-00505686417C
+29-08-2018 15:23:25 - Actualiza estado de Canal Moviminetos 61 :AF1D2C61-C9AB-E811-810A-00505686417C
+29-08-2018 15:23:25 - Actualiza estado de Requerimineto 61 :680
+29-08-2018 15:23:26 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1033,0,296,amaxpoint,0,0,30])
+29-08-2018 15:23:49 - ################################################################
+29-08-2018 15:23:49 - Procesando ID Canal Movimineto :70C7696F-C9AB-E811-810A-00505686417C
+29-08-2018 15:23:49 - Actualiza estado de Canal Moviminetos 61 :70C7696F-C9AB-E811-810A-00505686417C
+29-08-2018 15:23:50 - Actualiza estado de Requerimineto 61 :681
+29-08-2018 15:23:50 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1034,0,296,amaxpoint,0,0,37])
+29-08-2018 15:23:56 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 15:23:56 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 15:23:56 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 15:23:56 - Actualizar a estado 42 ID: 70C7696F-C9AB-E811-810A-00505686417C
+29-08-2018 15:26:22 - ################################################################
+29-08-2018 15:26:41 - ################################################################
+29-08-2018 15:26:41 - Procesando ID Canal Movimineto :30E3BEB3-C9AB-E811-810A-00505686417C
+29-08-2018 15:26:41 - Actualiza estado de Canal Moviminetos 61 :30E3BEB3-C9AB-E811-810A-00505686417C
+29-08-2018 15:26:41 - Actualiza estado de Requerimineto 61 :682
+29-08-2018 15:26:42 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1035,0,296,amaxpoint,0,0,36])
+29-08-2018 15:27:30 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 15:27:30 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 15:27:30 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 15:27:30 - Actualizar a estado 42 ID: 30E3BEB3-C9AB-E811-810A-00505686417C
+29-08-2018 17:37:55 - ################################################################
+29-08-2018 17:37:55 - Procesando ID Canal Movimineto :62FCEF2A-DCAB-E811-810A-00505686417C
+29-08-2018 17:37:55 - Actualiza estado de Canal Moviminetos 61 :62FCEF2A-DCAB-E811-810A-00505686417C
+29-08-2018 17:37:55 - Actualiza estado de Requerimineto 61 :683
+29-08-2018 17:37:55 - Secuencia Transaccion: obtieneClase(com.credibanco.tef.controller.param.TefParameters)->ejecutaMetodo([0]>[]>getInstance>[])->ejecutaMetodo([0]>[]>instanceDataManager>[])->ejecutaMetodo([0]>[]>instanceAuthorizationManager>[])->obtieneClase(com.credibanco.tef.controller.TEFTransactionManager)->ejecutaMetodo([4]>[*00*&[2]&[3]]>getTEFAuthorization>[01,4000,0,PRB00000,1036,0,0,amaxpoint,0,0,38])
+29-08-2018 17:38:01 - Respuesta obtenida: 05,,000000004000,000000000000,PRB00000  ,,,,,,,,,,,,,,,,,,71
+29-08-2018 17:38:01 - [Mensaje de respuesta]  Codigo:  05, Mensaje:  Transaccion con errores de apertura de puerto serial, o timeout sin recibir la solicitud inicial del datafono DATAFON ,   Secuencia:  INSERTAR 
+29-08-2018 17:38:01 - Se auto completo la trama: 05,      ,000000004000,000000000000,PRB00000  ,      ,      ,        ,      ,    ,  ,          ,  ,  ,    ,      ,    ,                       ,                       ,  ,            ,            ,71
+29-08-2018 17:38:01 - Actualizar a estado 42 ID: 62FCEF2A-DCAB-E811-810A-00505686417C

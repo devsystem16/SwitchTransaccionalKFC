@@ -25,19 +25,21 @@ class Despachador {
 
 		List<ColaProcesos> listaColaProceso =	oColaP.getListado()
 		int cantidadColas = listaColaProceso.size()
-		println "${cantidadColas} Colas encontradas"
+		
 
 		if (cantidadColas >0) {
+			println "${cantidadColas} Colas encontradas"
 			Tarjetas tarjeta
 			for (ColaProcesos cola : listaColaProceso) {
 				tarjeta = new Tarjetas(cola.iDCanalMovimiento, cola.imp_ip_estacion, cola, ocnn)
-					tarjeta.procesar ()
+				tarjeta.procesar ()
 			}
 			// Limpia Memoria
 			garbage.gc()
-			System.out.println(" Memoria libre despues de limpieza:  "+ garbage.freeMemory() );
+			System.out.println("Memoria liberada :  "+ garbage.freeMemory() );
+			println "Fin proceso colas."
 		}
-		println "Fin proceso colas."
+		
 	}
 	 
 	

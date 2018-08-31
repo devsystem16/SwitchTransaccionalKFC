@@ -11,13 +11,14 @@ class ArchivoProperties {
 	int verificar () {
 
 		int resultado =0
-		ResultSet odr =	 oCnn.selectSQL(Propiedades.get("Application", Constantes.QUERY_ACTUALIZAR_APP) )
+		 
+		ResultSet odr =	 oCnn.selectSQL(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.QUERY_ACTUALIZAR_APP) )
 		if (odr != null) {
 
 			if (odr.next()) {
 				resultado = odr.getInt("actualizar")
 				odr.close()
-				oCnn.insert(Propiedades.get("Application", Constantes.QUERY_INACTIVAR_ACTUALIZACION) )
+				oCnn.insert(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.QUERY_INACTIVAR_ACTUALIZACION) )
 			 
 			}
 
@@ -35,8 +36,8 @@ class ArchivoProperties {
 	// Construye el archivo de configuración de la aplicación el cual contiene los métodos a usar desde el jar para el envío de transacciones con pagos mediante tarjetas.
 	void construir () {
 
-		ResultSet odr =	 oCnn.selectSQL(Propiedades.get("Application", Constantes.QUERY_CONFIGURACION_INICIAL) )
-		String ruta = Constantes.RUTA_ARCHIVOS +"\\"+ Constantes.ARCHIVO_CONFIGURACION_DINAMICO
+		ResultSet odr =	 oCnn.selectSQL("EXEC switch.configuracionInicialProperties")
+		String ruta = Constantes.RUTA_ARCHIVOS +""+ Constantes.ARCHIVO_CONFIGURACION_DINAMICO
 		File archivo = new File(ruta);
 		BufferedWriter fichero;
 
@@ -62,7 +63,7 @@ class ArchivoProperties {
 			}
 		}
 
-
+		                     
 		odr = oCnn.selectSQL("EXEC switch.configuracionInicialPropertiesDispositivos"  )
 		while (odr.next()) {
 

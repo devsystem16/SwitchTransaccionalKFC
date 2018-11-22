@@ -36,7 +36,25 @@ class ColaProcesos {
 		 	 oCnn.update(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  "query.updateCanal"), prm)
 		println "Actualizo a 42 el registro ${this.iDCanalMovimiento}"
 	}
-
+	void limpiarCola (boolean limpiarReverso) {
+		println "inicio del proceso de limpieza (colas)"
+		List<ColaProcesos> listaColaProceso =	  getListado()
+		int cantidadColas = listaColaProceso.size()
+		if (cantidadColas >0) {
+			println "${cantidadColas} Colas seran limpiadas."
+			Tarjetas tarjeta
+			for (ColaProcesos cola : listaColaProceso) {
+				tarjeta = new Tarjetas( cola, oCnn)
+				tarjeta.limpiarTransaccionesPendientes(limpiarReverso)
+			}
+			tarjeta = null
+			// Limpia Memoria
+		 
+		 
+		}
+		println "Fin proceso de limpieza."
+		
+	}
 	ArrayList getListado ( ) {
 
 		// Obtengo ip

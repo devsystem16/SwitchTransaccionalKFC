@@ -1,0 +1,10 @@
+12:13:16	DEBUG : Se envia trama de seguridad=SHFAD11966AB6169CAk
+12:13:17	DEBUG : Se espera la respuesta
+12:13:17	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00997212113820181106      PRB00101000000839409   061118            T
+12:13:31	DEBUG : Se envia ACK al pinpad proceso OK
+12:13:31	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+12:13:31	DEBUG : Se envia trama de seguridad=SH0B5E867DF3005216
+12:13:32	DEBUG : Se espera la respuesta
+12:13:32	DEBUG : Se envia trama al puerto al pinpad  04000000000000000125000000000112000000000000000000000013                                    00997212114820181106      PRB00101000000839409   061118            V
+12:13:38	DEBUG : Se envia ACK al pinpad proceso OK
+12:13:38	DEBUG : Se envia respuesta a la caja respuesta=0425TRANS. INCORRECTA

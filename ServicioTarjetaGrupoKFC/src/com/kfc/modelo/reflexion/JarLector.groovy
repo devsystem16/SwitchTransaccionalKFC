@@ -41,7 +41,7 @@ class JarLector {
 	Object objClase
 	Method metodo
 	ConexionSqlServer ocnn
-	
+
 	private static JarLector Singelton
 
 	// Constructor
@@ -264,6 +264,7 @@ class JarLector {
 			}
 
 		}  catch (java.io.IOException e) {// InvocationTargetException e) {
+			println e.getMessage()
 			respuesta = "" // e.getTargetException().getMessage() + " Catch"
 			LogsApp.getInstance().Escribir( "Exception : " +  e.getMessage())
 		}
@@ -513,6 +514,7 @@ class JarLector {
 
 	Object executeMetodoSecuencia (String lineas, Respuesta_Autorizacion respuesta) {
 
+		 //Thread.sleep(3000)
 		boolean ClaseInstanciada = false
 		Object mensajeRespuesta ;
 
@@ -574,6 +576,84 @@ class JarLector {
 						LogsApp.getInstance().Escribir("No se pudo encontrar la Clase ${contenido} " + e.getMessage())
 						e.printStackTrace()
 					}
+
+					break
+
+
+
+
+				case "esperar" :
+
+
+					try
+					{
+						int sTiempo = Integer.parseInt(contenido)
+						Thread.sleep(sTiempo);
+					}catch(Exception e){
+
+					}
+
+					break
+
+				case "asignaAtributo":
+
+					Object [] ConfigAsignaAtributo= contenido.split(">")
+					int  posicionElemento = -1
+					Object objClaseTemp = null
+
+					if (ConfigAsignaAtributo[0].toString().contains("obtieneClase")) {
+						String cadena = ConfigAsignaAtributo[0].toString()
+						String contenidoTem =cadena.toString().substring(cadena.toString().indexOf("(") +1, cadena.toString().length() -1 ).trim()
+						objClaseTemp =cl.loadClass (contenidoTem.toString())
+						ClaseInstanciada = false // new
+					}else {
+						posicionElemento =  Integer.parseInt( ConfigAsignaAtributo[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
+					}
+
+					Object elemento = null
+					if (posicionElemento == -1) {
+						elemento = objClaseTemp;
+					}else {
+						elemento = colaSecuencia[posicionElemento]
+					}
+
+
+					Object [] atributosSet = ConfigAsignaAtributo[1].split(",")
+
+					respuesta.cargarCatalogo("ENVIO")
+
+
+					String data =""
+					String valor =""
+					for (atributo in atributosSet) {
+						for (cat in respuesta.catalogo) {
+
+							if (atributo.toString().contains("|")) {
+
+								data =  atributo.toString().substring(0, atributo.toString().indexOf("|"))
+								valor =  atributo.toString().substring( atributo.toString().indexOf("|")+1,  atributo.toString().length() )
+
+								if (data.equals(cat.nombre_campo)) {
+									setAtributo(elemento ,cat.nombre_campo , valor.toString()  )
+
+									break
+								}
+
+							}else {
+
+								if (atributo.toString().equals(cat.nombre_campo)) {
+									setAtributo(elemento ,cat.nombre_campo , atributo.toString() )
+									break
+								}
+							}
+
+
+						}
+					}
+
+
+
+					colaSecuencia[i] = elemento
 
 					break
 
@@ -677,75 +757,10 @@ class JarLector {
 					colaSecuencia[i] =mensajeRespuesta
 
 					break
-
-
-				case "esperar" :
-
-
-					try
-					{
-						int sTiempo = Integer.parseInt(contenido)
-						Thread.sleep(sTiempo);
-					}catch(Exception e){
-
-					}
-
-					break
-
-				case "asignaAtributo":
-
-					Object [] ConfigAsignaAtributo= contenido.split(">")
-					int  posicionElemento = -1
-					Object objClaseTemp = null
-
-					if (ConfigAsignaAtributo[0].toString().contains("obtieneClase")) {
-						String cadena = ConfigAsignaAtributo[0].toString()
-						String contenidoTem =cadena.toString().substring(cadena.toString().indexOf("(") +1, cadena.toString().length() -1 ).trim()
-						objClaseTemp =cl.loadClass (contenidoTem.toString())
-						ClaseInstanciada = false // new
-					}else {
-						// 1) Posicion de referencia anterior.
-						//						if (ConfigAsignaAtributo[j].toString().contains("[")) {
-						//
-						//						}
-						posicionElemento =  Integer.parseInt( ConfigAsignaAtributo[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
-					}
-
-					Object elemento = null
-					if (posicionElemento == -1) {
-						elemento = objClaseTemp;
-					}else {
-						elemento = colaSecuencia[posicionElemento]
-					}
-
-
-					Object [] atributosSet = ConfigAsignaAtributo[1].split(",")
-
-					respuesta.cargarCatalogo("ENVIO")
-
-
-					for (atributo in atributosSet) {
-						for (cat in respuesta.catalogo) {
-							if (atributo.toString().equals(cat.nombre_campo)) {
-								setAtributo(elemento ,cat.nombre_campo , cat.values)
-								break
-							}
-						}
-					}
-
-				//					for (cat in respuesta.catalogo) {
-				//						setAtributo(elemento ,cat.nombre_campo , cat.values)
-				//					}
-
-					colaSecuencia[i] = elemento
-
-					break
-
-
 				case "creaTrama":
 					int  posicionElemento = -1
 					Object [] ConfigCreaTrama= contenido.split(">")
-					posicionElemento =  Integer.parseInt( ConfigCreaTrama[0].toString().replace("[", "").replace("]","") ) // .replaceAll("[\\[\\]]", ""))
+					posicionElemento =  Integer.parseInt( ConfigCreaTrama[0].toString().replace("[", "").replace("]","") )
 					Object objClaseTemp = null
 
 					Object elemento = null
@@ -759,19 +774,20 @@ class JarLector {
 					respuesta.cargarCatalogo("RESPUESTA")
 
 					String caracterSep =  (respuesta.requerimiento.caracterSeparador.toString().length() == 0 )?  "->" : respuesta.requerimiento.caracterSeparador
+
 					respuesta.requerimiento.caracterSeparador  = caracterSep
 					respuesta.respuestatipoObjeto = true
 					String trama  ="";
 					for (cat in respuesta.catalogo) {
 						if (trama.equals("")) {
-							trama  = trama + "${GetAtributo(elemento ,cat.nombre_campo  )}"	
+							trama  = trama + "${GetAtributo(elemento ,cat.nombre_campo  )}"
 						}else {
 							trama  = trama + "${caracterSep}${GetAtributo(elemento ,cat.nombre_campo  )}"
 						}
-				 
+
 					}
 
-					mensajeRespuesta = trama 
+					mensajeRespuesta = trama
 					break
 
 

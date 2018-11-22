@@ -1,0 +1,15 @@
+09:53:32	DEBUG : Se envia trama de seguridad=SHEA1528E763102CA7c
+09:53:33	DEBUG : Se espera la respuesta
+09:53:33	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00995509532620181105      PRB00101000000839409   051118            R
+09:53:50	DEBUG : Se envia ACK al pinpad proceso OK
+09:53:50	DEBUG : Se envia respuesta a la caja respuesta=0100APROBADO            00995509532620181105255532PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101436402XXXXXX727                 FERNANDEZ SANTANA JOSE OS               02                                        
+09:54:32	DEBUG : Se envia trama de seguridad=SH00B28ACDB889FE80f
+09:54:33	DEBUG : Se espera la respuesta
+09:54:33	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00995509542920181105255532PRB00101000000839409   051118            ^
+09:54:35	DEBUG : Se envia ACK al pinpad proceso OK
+09:54:35	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+13:01:55	DEBUG : Se envia trama de seguridad=SH2EBD7B2A288E26A2o
+13:01:56	DEBUG : Se espera la respuesta
+13:01:56	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00995513015220181105255532PRB00101000000839409   051118            Y
+13:02:11	DEBUG : Se envia ACK al pinpad proceso OK
+13:02:11	DEBUG : Se envia respuesta a la caja respuesta=0300APROBADO            00995513015220181105255532PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101                                FERNANDEZ SANTANA JOSE OS               02                                        

@@ -1,0 +1,60 @@
+09:27:48	DEBUG : Se envia trama de seguridad=SH497566072DA1608Bj
+09:27:49	DEBUG : Se espera la respuesta
+09:27:49	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00991509274520181029      PRB00101000000839409   291018            P
+09:28:08	DEBUG : Se envia ACK al pinpad proceso OK
+09:28:08	DEBUG : Se envia respuesta a la caja respuesta=0100APROBADO            00991509274520181029281858PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101436402XXXXXX727                 FERNANDEZ SANTANA JOSE OS               02                                        
+09:28:17	DEBUG : Se envia trama de seguridad=SHEEA2590D44C4B2A1d
+09:28:18	DEBUG : Se espera la respuesta
+09:28:18	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    28185809281520181029281858PRB00101000000839409   291018            \
+09:28:34	DEBUG : Se envia ACK al pinpad proceso OK
+09:28:34	DEBUG : Se envia respuesta a la caja respuesta=0350TRANSACCION INCORREC28185809281520181029      PRB00101                                                                                                                                                                    MEDIANET                                                                                                           FERNANDEZ SANTANA JOSE OS               02                                        
+09:28:49	DEBUG : Se envia trama de seguridad=SHEC09C3C89000A12B
+09:28:50	DEBUG : Se espera la respuesta
+09:28:51	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    28185809284920181029281858PRB00101000000839409   291018            U
+09:28:56	DEBUG : Se envia ACK al pinpad proceso OK
+09:28:56	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:29:05	DEBUG : Se envia trama de seguridad=SH61D0502D73DDA031o
+09:29:06	DEBUG : Se espera la respuesta
+09:29:06	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    28185809290420181029281858PRB00101000000839409   291018            ]
+09:29:13	DEBUG : Se envia ACK al pinpad proceso OK
+09:29:13	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:29:25	DEBUG : Se envia trama de seguridad=SHAAAF259AF4F35B52
+09:29:26	DEBUG : Se espera la respuesta
+09:29:26	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    28185809292320181029281858PRB00101000000839409   291018            X
+09:29:38	DEBUG : Se envia ACK al pinpad proceso OK
+09:29:38	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:33:52	DEBUG : Se envia trama de seguridad=SH9785DCA4E27BBF39e
+09:33:53	DEBUG : Se espera la respuesta
+09:33:53	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509335120181029281858PRB00101000000839409   291018            \
+09:33:56	DEBUG : Se envia ACK al pinpad proceso OK
+09:33:56	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:34:08	DEBUG : Se envia trama de seguridad=SHC7EA5BBA60A09B47
+09:34:09	DEBUG : Se espera la respuesta
+09:34:09	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509340620181029281858PRB00101000000839409   291018            Y
+09:34:11	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:11	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:34:17	DEBUG : Se envia trama de seguridad=SH653F51F36591F4DCa
+09:34:18	DEBUG : Se espera la respuesta
+09:34:18	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509341620181029281858PRB00101000000839409   291018            X
+09:34:24	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:24	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:34:34	DEBUG : Se envia trama de seguridad=SHAAD768C688F13171c
+09:34:35	DEBUG : Se espera la respuesta
+09:34:35	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509343120181029281858PRB00101000000839409   291018            ]
+09:34:39	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:39	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:34:45	DEBUG : Se envia trama de seguridad=SHCC06A6150B92E17D
+09:34:46	DEBUG : Se espera la respuesta
+09:34:46	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509344320181029281858PRB00101000000839409   291018            X
+09:34:48	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:48	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:34:54	DEBUG : Se envia trama de seguridad=SH7C738D9871E70938c
+09:34:55	DEBUG : Se espera la respuesta
+09:34:55	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509345220181029281858PRB00101000000839409   291018            X
+09:34:57	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:57	DEBUG : Se envia respuesta a la caja respuesta=11ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:35:06	DEBUG : Se envia trama de seguridad=SHD1FF46FD2ECAE21B
+09:35:07	DEBUG : Se espera la respuesta
+09:35:07	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00991509350420181029281858PRB00101000000839409   291018            Z
+09:35:22	DEBUG : Se envia ACK al pinpad proceso OK
+09:35:22	DEBUG : Se envia respuesta a la caja respuesta=0300APROBADO            00991509350420181029281858PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101                                FERNANDEZ SANTANA JOSE OS               02                                        

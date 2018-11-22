@@ -10,8 +10,13 @@ class ArchivoProperties {
 
 	int verificar () {
 
+		if (oCnn == null) {
+			oCnn =  ConexionSqlServer.getInstance()
+			oCnn.abrirConexion()
+		}
+		//
 		int resultado =0
-		 
+
 		ResultSet odr =	 oCnn.selectSQL(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.QUERY_ACTUALIZAR_APP) )
 		if (odr != null) {
 
@@ -19,7 +24,6 @@ class ArchivoProperties {
 				resultado = odr.getInt("actualizar")
 				odr.close()
 				oCnn.insert(Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, Constantes.QUERY_INACTIVAR_ACTUALIZACION) )
-			 
 			}
 
 			if (!odr.isClosed()) {
@@ -35,36 +39,19 @@ class ArchivoProperties {
 
 	// Construye el archivo de configuración de la aplicación el cual contiene los métodos a usar desde el jar para el envío de transacciones con pagos mediante tarjetas.
 	void construir () {
-
-		ResultSet odr =	 oCnn.selectSQL("EXEC switch.configuracionInicialProperties")
+		println "Actualizando archivo de configuracion..."
+		//		ResultSet odr =	 oCnn.selectSQL("EXEC switch.configuracionInicialProperties")
 		String ruta = Constantes.RUTA_ARCHIVOS +""+ Constantes.ARCHIVO_CONFIGURACION_DINAMICO
 		File archivo = new File(ruta);
 		BufferedWriter fichero;
-
-		if (odr.next()) {
-
-			if(archivo.exists()) {
-				archivo.delete()
-			}
-			fichero = new BufferedWriter(new FileWriter(archivo));
-
-			fichero.write(
-					"# Configuracion actualziacion y timer de busqueda de pagos con tarjeta"  +  Constantes.NEW_LINE +
-					Constantes.LINE_SALTO_RELLENO + Constantes.NEW_LINE +
-					Constantes.TIMER_LOOP_ACTUALIZACION +"="+   odr.getString("intervaloActualizacion")  +  Constantes.NEW_LINE +
-					Constantes.TIMER_LOOP_APP +"="+ odr.getString("intervaloTarjeta")  +  Constantes.NEW_LINE +
-					Constantes.LINE_SALTO_RELLENO + Constantes.NEW_LINE +
-					Constantes.RURA_JAR +"="+ odr.getString("rutaJar")  + Constantes.NEW_LINE +
-					Constantes.LINE_SALTO_RELLENO + Constantes.NEW_LINE
-					)
-
-			if (!odr.isClosed()) {
-				odr.close()
-			}
+ 
+		if(archivo.exists()) {
+			archivo.delete()
 		}
-
-		                     
-		odr = oCnn.selectSQL("EXEC switch.configuracionInicialPropertiesDispositivos"  )
+		fichero = new BufferedWriter(new FileWriter(archivo));
+ 
+		String cadena = Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC, "cadena.id")
+		ResultSet odr =  oCnn.selectSQL("EXEC switch.configuracionInicialPropertiesDispositivos ${cadena}"  )
 		while (odr.next()) {
 
 			String newString = new String(odr.getString("recurso").toString().getBytes("UTF-8"), "UTF-8");

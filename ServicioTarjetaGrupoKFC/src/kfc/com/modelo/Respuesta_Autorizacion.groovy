@@ -21,9 +21,9 @@ class Respuesta_Autorizacion {
 	ArrayList<MensajesRespuestas> ListadomensajesRespuesta
 	String [] posicionRepsuesta
 	MensajesRespuestas mensajeRespuesta
-	
+
 	boolean respuestatipoObjeto = false
-	
+
 	private static Respuesta_Autorizacion instance
 
 	static  Respuesta_Autorizacion getInstancia( ){
@@ -32,8 +32,8 @@ class Respuesta_Autorizacion {
 		instance
 	}
 
-	void cargarCatalogo (String tipo) {
 
+	void Loadcatalogo(String tipo) {
 		String trama =  requerimiento.rqaut_trama
 		// Determino el tipo de trama (compra, anulacion, recuperaTransaccion)
 		String tipoTrama = trama.substring(trama.lastIndexOf("@")+1, trama.length())
@@ -62,16 +62,61 @@ class Respuesta_Autorizacion {
 			}
 		}
 
-		if (tipo.equals("ENVIO")) {
-			String caracterSeparador  = requerimiento.caracterSeparador
-			if ( caracterSeparador.equals("")) {
-				caracterSeparador ="->"
-			}
-			Object [] values  = requerimiento.rqaut_trama.split(caracterSeparador)
-			for	(int i=0 ; i < catalogo.size() ; i++ ) {
-				catalogo[i].values = values[i]
+	}
+	void cargarCatalogo (String tipo) {
+
+		String trama =  requerimiento.rqaut_trama
+		// Determino el tipo de trama (compra, anulacion, recuperaTransaccion)
+		String tipoTrama = trama.substring(trama.lastIndexOf("@")+1, trama.length())
+		String jsonString =  Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC, "JAR.${tipoTrama.toUpperCase()}.${requerimiento.medioAutorizador.toUpperCase()}.CATALOGO.${tipo}")
+
+		if (jsonString.equals(""))
+		{
+			insetarBug("No se ha configurado el catalogo: ${requerimiento.medioAutorizador.toUpperCase()}.${tipoTrama.toUpperCase()} (stopped service)")
+			println "No hay catalogo de ${tipo} para:${requerimiento.medioAutorizador.toUpperCase()} - ${tipoTrama.toUpperCase()}"
+			LogsApp.getInstance().Escribir("------------Exception: No se ha configurado el catalogo:  ${tipo} para:${requerimiento.medioAutorizador.toUpperCase()}.${tipoTrama.toUpperCase()}")
+			System.exit(1)
+			return
+		}
+
+
+		JSONObject jsonObject = new JSONObject(jsonString);
+		JSONArray jsonArray = jsonObject.getJSONArray("catalogo");
+		catalogo = new ArrayList<Catalogo>();
+		int length = jsonArray.length()
+		for(int i=0;i<length;i++){
+			try {
+				JSONObject json = jsonArray.getJSONObject(i)
+				catalogo.add( new Catalogo(
+						json.getString("nombre_campo")
+						,json.getInt("posicion")
+						,json.getInt("longitud")
+						,json.getString("tipo_dato")
+						,json.getString("caracter_relleno")
+						,json.getString("orientacion_relleno")
+						,json.getString("tabla")
+						,json.getString("campo")
+						))
+			} catch (Exception e) {
+				e.printStackTrace()
 			}
 		}
+
+		try {
+			if (tipo.equals("ENVIO")) {
+				String caracterSeparador  = requerimiento.caracterSeparador
+				if ( caracterSeparador.equals("")) {
+					caracterSeparador ="->"
+				}
+				Object [] values  = requerimiento.getSoloTrama_separator().split(caracterSeparador)
+				for	(int i=0 ; i < catalogo.size() ; i++ ) {
+					catalogo[i].values = values[i]
+				}
+			}
+		} catch (Exception e) {
+			LogsApp.getInstance().Escribir("Exception------ Trama de  envio no valida. " + e.getMessage())
+		}
+
 
 	}
 
@@ -120,12 +165,13 @@ class Respuesta_Autorizacion {
 		} // Validacion= Tiene caracter separador..
 
 		return false
-
 	}
+
 	public void insetarBugTIME_OUT (String mensajeBug) {
 		String SqlQuery  = "INSERT INTO SWT_Respuesta_Autorizacion (rsaut_trama,rsaut_fecha,rsaut_movimiento,raut_observacion,IDStatus,SWT_Respuesta_AutorizacionVarchar1) VALUES ( '${mensajeBug}',GETDATE() , '${requerimiento.rqaut_movimiento}','${mensajeBug}', ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_ERROR},'TIME OUT')"
 		ocnn.insert(SqlQuery)
 	}
+
 	public void insetarBug (String mensajeBug) {
 		String SqlQuery  = "INSERT INTO SWT_Respuesta_Autorizacion (rsaut_trama,rsaut_fecha,rsaut_movimiento,raut_observacion,IDStatus,SWT_Respuesta_AutorizacionVarchar1) VALUES ( '${mensajeBug}',GETDATE() , '${requerimiento.rqaut_movimiento}','${mensajeBug}', ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_ERROR},'ERROR')"
 		ocnn.insert(SqlQuery)
@@ -142,7 +188,7 @@ class Respuesta_Autorizacion {
 		mns.secuencia.toString().toUpperCase().equals("APROBADA") ? "APROBADA":"NO APROBADO"
 	}
 
-	
+
 	public void  InsertarObjetoRespuestaAutorizacion () {
 		// Generar el Insert segun la configuracion del catalogo.
 		String SqlQuery  = "INSERT INTO SWT_Respuesta_Autorizacion"
@@ -176,12 +222,20 @@ class Respuesta_Autorizacion {
 			conteo ++
 		}
 
-
+		//requerimiento.getTipoTransaccion()
 
 		// Generar el Insert segun la configuracion del catalogo.
 		String SqlQuery  = "INSERT INTO SWT_Respuesta_Autorizacion"
 		String param ="(rsaut_trama,rsaut_movimiento,raut_observacion,rsaut_fecha,IDStatus,SWT_Respuesta_AutorizacionVarchar1,"
-		String values ="VALUES ('${this.tramaRespuesta}','${requerimiento.rqaut_movimiento}', '${mensajeRespuesta.mensaje}',GETDATE(), ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_OK},'${getEstadoSegunSecuencia(mensajeRespuesta)}',"
+
+		String values =""
+		if(requerimiento.getTipoTransaccion().contains("REVERSO")) {
+			values ="VALUES ('${this.tramaRespuesta}','${requerimiento.rqaut_movimiento}', '${mensajeRespuesta.mensaje}',GETDATE(), ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_OK},'REVERSO',"
+		}else {
+			values ="VALUES ('${this.tramaRespuesta}','${requerimiento.rqaut_movimiento}', '${mensajeRespuesta.mensaje}',GETDATE(), ${Constantes.ESTADO_SWT_Respuesta_Autorizacion_OK},'${getEstadoSegunSecuencia(mensajeRespuesta)}',"
+		}
+
+
 		for (Catalogo c  : catalogo) {
 			if (!c.tabla.equals("indefinido")) {
 				param = param +  " ${c.campo},"
@@ -229,9 +283,9 @@ class Respuesta_Autorizacion {
 	}
 
 	void procesarRespuestaSwitch (String TramaRespuesta) {
- 
+
 		cargarCatalogo("RESPUESTA")
- 
+
 		// Obtener los codigos de respuesta configurados de las tramas 00=ok;  01=error; 0? = etc.
 		this.tramaRespuesta = TramaRespuesta
 		obtenerMensajesRespuesta()
@@ -251,10 +305,16 @@ class Respuesta_Autorizacion {
 		if (mensajeRespuesta.secuencia.equals("INSERTAR") ||mensajeRespuesta.secuencia.equals("APROBADA") ) {
 			println "insertar con normalidad."
 
+			String dato =""
+			if(requerimiento.getTipoTransaccion().equals("REVERSO")) {
+				dato ="123"
+				dato += "456"
+			}
+
 			//La longitud de la trama de respuesta cumple la longitud de la trama configurada en el catalogo ?
 			if (this.getLongitudTrama() == this.tramaRespuesta .toString().length() ) {
 				println "Trama: ${this.tramaRespuesta .toString()} "
-				LogsApp.getInstance().Escribir("si cumple longitud - Trama insertada mediante ejecución normal: " +this.tramaRespuesta)
+				//LogsApp.getInstance().Escribir("si cumple longitud - Trama insertada mediante ejecución normal: " +this.tramaRespuesta)
 				InsertarTramaRespuestaAutorizacion ()
 
 			}else { // Si no cumplio la longitud
@@ -292,12 +352,18 @@ class Respuesta_Autorizacion {
 
 	void ejecutar(String secuencia, String codigoRespuesta , int intentos ) {
 		boolean TIME_OUT = false
+
+		secuencia =	requerimiento.asignarValoresSecuencia(secuencia)
+
 		if ( (secuencia.equals("INSERTAR") || mensajeRespuesta.secuencia.equals("APROBADA") ) || intentos ==1) {
-			println "insertar con normalidad desde la funcion recursiva."
+
+			println "Insert normal Recursivo"
 
 			if (this.getLongitudTrama() == this.tramaRespuesta.toString().length() ) {
-				LogsApp.getInstance().Escribir("RC si cumple longitud - Trama insertada mediante ejecución normal: " +this.tramaRespuesta)
+
+			//	LogsApp.getInstance().Escribir("RC si cumple longitud - Trama insertada mediante ejecución normal: " +this.tramaRespuesta)
 				InsertarTramaRespuestaAutorizacion ()
+
 			}else {
 
 				if (requerimiento.caracterSeparador.toString() > 0) {
@@ -308,12 +374,16 @@ class Respuesta_Autorizacion {
 					}else {
 						InsertarTramaRespuestaAutorizacionERROR()
 					}
-				}else {
+
+
+				}
+				else {
 					// inserta Transaccion Errror.
 					println "Trama: ${this.tramaRespuesta .toString()} "
 					LogsApp.getInstance().Escribir("RC Se inserto trama (error controlado): ${this.tramaRespuesta}")
 					InsertarTramaRespuestaAutorizacionERROR ()
 				}
+
 			}
 
 		}else {
@@ -331,7 +401,7 @@ class Respuesta_Autorizacion {
 			final Future<String> handler = executor.submit(new Callable() {
 						@Override
 						public String call() throws Exception {
-							return j.executeMetodoSecuencia(secuencia)
+							return j.executeMetodoSecuencia(secuencia ,  this)
 						}
 					})
 			try {

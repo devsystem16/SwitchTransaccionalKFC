@@ -23,7 +23,7 @@ class ConexionSqlServer {
 	static ConexionSqlServer getInstance () {
 		return  (instance != null) ? ConexionSqlServer : new ConexionSqlServer ();
 	}
-	
+
 	Connection obtenerConexion()throws Throwable {
 		if (lConexion == null || lConexion.isClosed() ) {
 			abrirConexion()
@@ -32,11 +32,17 @@ class ConexionSqlServer {
 	}
 
 	void abrirConexion() throws Throwable {
-		urlConexion = "jdbc:sqlserver:"+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.servidor")+";databaseName="+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.base_datos")
-		usuario=Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.usuario")
-		clave =Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.passw")
+		try {
 
-		lConexion = DriverManager.getConnection(urlConexion + ";user=" +usuario+ ";password="+clave+";" )
+			urlConexion = "jdbc:sqlserver:"+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.servidor")+";databaseName="+Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.base_datos")
+			usuario=Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.usuario")
+			clave =Propiedades.get(Constantes.ARCHIVO_APPLICATION_STATIC,  "conexion.passw")
+			lConexion = DriverManager.getConnection(urlConexion + ";user=" +usuario+ ";password="+clave+";" )
+			
+		} catch (Exception e) {
+			e.printStackTrace()
+		}
+		return
 	}
 
 	void cerrarConexion() throws Throwable {

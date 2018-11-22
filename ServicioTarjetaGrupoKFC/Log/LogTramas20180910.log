@@ -1,0 +1,5 @@
+12:14:18	DEBUG : Se envia trama de seguridad=SHDCD4DECC6614C356
+12:14:19	DEBUG : Se espera la respuesta
+12:14:19	DEBUG : Se envia trama al puerto al pinpad  01000000000000000100000000000093000000000000000000000007                                    00120016590920180906      PRB00000000000839409   060918            R
+12:14:44	DEBUG : Se envia ACK al pinpad proceso OK
+12:14:44	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               

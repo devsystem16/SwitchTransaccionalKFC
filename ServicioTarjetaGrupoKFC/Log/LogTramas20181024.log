@@ -1,0 +1,85 @@
+09:26:52	DEBUG : Se envia trama de seguridad=SH451E2499E659C1F6
+09:26:53	DEBUG : Se espera la respuesta
+09:26:53	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00987509264920181024      PRB00101000000839409   241018            \
+09:27:20	DEBUG : Se envia ACK al pinpad proceso OK
+09:27:20	DEBUG : Se envia respuesta a la caja respuesta=0103ESTAB NOAFILIADO    00987509264920181024      PRB00101                                                                                                        VISA                                                        RED MEDIANET                                                000000839409   PRB00101                                TARJETA DE PRUEBA CR                    02                                        
+09:27:57	DEBUG : Se envia trama de seguridad=SH1140F8FCB665A26A
+09:27:58	DEBUG : Se espera la respuesta
+09:27:58	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00987609275420181024      PRB00101000000839409   241018            R
+09:28:19	DEBUG : Se envia ACK al pinpad proceso OK
+09:28:19	DEBUG : Se envia respuesta a la caja respuesta=0189TERMINAL INVAL.     00987609275420181024      PRB00101                                                                                                        DINERS CLUB                                                 RED DATAFAST                                                7200015645     CAXXXXXX                                JOSE FERNANDEZ                          02                                        
+09:30:31	DEBUG : Se envia trama de seguridad=SHB731209413B36B4E
+09:30:32	DEBUG : Se espera la respuesta
+09:30:32	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00987709303020181024      PRB00101000000839409   241018            W
+09:30:55	DEBUG : Se envia ACK al pinpad proceso OK
+09:30:55	DEBUG : Se envia respuesta a la caja respuesta=0103ESTAB NOAFILIADO    00987709303020181024      PRB00101                                                                                                        VISA                                                        RED MEDIANET                                                000000839409   PRB00101                                TARJETA DE PRUEBA CR                    02                                        
+09:33:32	DEBUG : Se envia trama de seguridad=SHCED3935B6F68D002
+09:33:33	DEBUG : Se espera la respuesta
+09:33:33	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00987809333120181024      PRB00101000000839409   241018            Z
+09:33:38	DEBUG : Se envia ACK al pinpad proceso OK
+09:33:38	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:33:53	DEBUG : Se envia trama de seguridad=SH7D9BCA2DDB41FE23e
+09:33:54	DEBUG : Se espera la respuesta
+09:33:54	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00987909334820181024      PRB00101000000839409   241018            U
+09:34:00	DEBUG : Se envia ACK al pinpad proceso OK
+09:34:00	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:35:32	DEBUG : Se envia trama de seguridad=SH29ADDA7555C4CAB1
+09:35:33	DEBUG : Se espera la respuesta
+09:35:33	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00988009352920181024      PRB00101000000839409   241018            R
+09:35:35	DEBUG : Se envia ACK al pinpad proceso OK
+09:35:35	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:42:44	DEBUG : Se envia trama de seguridad=SH377824B321DC056B
+09:42:45	DEBUG : Se espera la respuesta
+09:42:45	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00988109424120181024      PRB00101000000839409   241018            ]
+09:43:07	DEBUG : Se envia ACK al pinpad proceso OK
+09:43:07	DEBUG : Se envia respuesta a la caja respuesta=0113 MONTO INVALIDO     00988109424120181024      PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101                                FERNANDEZ SANTANA JOSE OS               02                                        
+09:43:59	DEBUG : Se envia trama de seguridad=SHE67EDD40790332ED
+09:44:00	DEBUG : Se espera la respuesta
+09:44:00	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00988209435620181024      PRB00101000000839409   241018            Y
+09:44:04	DEBUG : Se envia ACK al pinpad proceso OK
+09:44:04	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:44:13	DEBUG : Se envia trama de seguridad=SH8C1B9F2FE2BC8C79
+09:44:14	DEBUG : Se espera la respuesta
+09:44:14	DEBUG : Se envia trama al puerto al pinpad  01000000000000000005000000000004000000000000000000000001                                    00988309441120181024      PRB00101000000839409   241018            \
+09:44:42	DEBUG : Se envia ACK al pinpad proceso OK
+09:44:42	DEBUG : Se envia respuesta a la caja respuesta=01YYESTAB NOAFILIADO    00988309441120181024      PRB00101                                                                                                        VISA                                                        RED MEDIANET                                                000000839409   PRB00101                                MERA/HUGO                               03VISA CREDITO                            
+09:50:13	DEBUG : Se envia trama de seguridad=SH5839760371927C9E
+09:50:14	DEBUG : Se espera la respuesta
+09:50:14	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988409492920181024      PRB00101000000839409   241018            [
+09:50:17	DEBUG : Se envia ACK al pinpad proceso OK
+09:50:17	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:56:51	DEBUG : Se envia trama de seguridad=SHC8A4B01B6B600D4Da
+09:56:52	DEBUG : Se espera la respuesta
+09:56:52	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988509560420181024      PRB00101000000839409   241018            [
+09:56:56	DEBUG : Se envia ACK al pinpad proceso OK
+09:56:56	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:59:23	DEBUG : Se envia trama de seguridad=SH04DB6BE889AF5D43c
+09:59:24	DEBUG : Se espera la respuesta
+09:59:24	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988609592120181024      PRB00101000000839409   241018            P
+09:59:31	DEBUG : Se envia ACK al pinpad proceso OK
+09:59:31	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:59:41	DEBUG : Se envia trama de seguridad=SH5F747F135573B7D2
+09:59:42	DEBUG : Se espera la respuesta
+09:59:42	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988709593820181024      PRB00101000000839409   241018            Y
+09:59:45	DEBUG : Se envia ACK al pinpad proceso OK
+09:59:45	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+09:59:54	DEBUG : Se envia trama de seguridad=SH746A466337670F56
+09:59:55	DEBUG : Se espera la respuesta
+09:59:55	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988809595220181024      PRB00101000000839409   241018            Z
+10:00:01	DEBUG : Se envia ACK al pinpad proceso OK
+10:00:01	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+10:00:08	DEBUG : Se envia trama de seguridad=SH38B6AB474442CCA6
+10:00:09	DEBUG : Se espera la respuesta
+10:00:09	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988910000720181024      PRB00101000000839409   241018            _
+10:00:36	DEBUG : Se envia ACK al pinpad proceso OK
+10:00:36	DEBUG : Se envia respuesta a la caja respuesta=0100APROBADO            00988910000720181024984086PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101436402XXXXXX727                 FERNANDEZ SANTANA JOSE OS               02                                        
+10:27:12	DEBUG : Se envia trama de seguridad=SHD3BE55A40558C371c
+10:27:13	DEBUG : Se espera la respuesta
+10:27:13	DEBUG : Se envia trama al puerto al pinpad  01000000000000000125000000000112000000000000000000000013                                    00988910000720181024      PRB00101000000839409   241018            _
+10:27:21	DEBUG : Se envia ACK al pinpad proceso OK
+10:27:21	DEBUG : Se envia respuesta a la caja respuesta=01ERTRANS. CANCELADA                                                                                                                                                                                                                                                                                                                                                                                                               
+12:26:56	DEBUG : Se envia trama de seguridad=SH55AEB76C83AA533B`
+12:26:57	DEBUG : Se espera la respuesta
+12:26:57	DEBUG : Se envia trama al puerto al pinpad  03000000000000000125000000000112000000000000000000000013                                    00988910000720181024984086PRB00101000000839409   241018            V
+12:27:37	DEBUG : Se envia ACK al pinpad proceso OK
+12:27:37	DEBUG : Se envia respuesta a la caja respuesta=0300APROBADO            00988910000720181024984086PRB00101                                                                                                        TARJETAS DEBITO                                             RED MEDIANET                                                000000839409   PRB00101                                FERNANDEZ SANTANA JOSE OS               02                                        

@@ -13,8 +13,8 @@ import kfc.com.modelo.Despachador
 import kfc.com.modelo.LogsApp
 import kfc.com.modelo.Propiedades
 import kfc.com.modelo.ValidadorDispositivos
+import sun.security.krb5.internal.EncTicketPart
 import sun.security.util.Length
-
 import java.lang.reflect.InvocationTargetException
 
 
@@ -28,25 +28,35 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 public class Main {
 
-
+	static public byte cantidadConsultasParaLiberarMemoria =0
+	static public byte cantidadConsultasParaLiberarMemoriaTemp = 0
 	static Runtime garbage = Runtime.getRuntime();
 	static main(args) {
-// 
-//		String trama ="01,4000,0,PRB00000,1046,0,0,amaxpoint,0,0,3F@ENVIO"
-//		
-//		println trama.substring( 1 , 2);
-//		return 
+
 		println "Iniciando Servicio..."
 		// Creo Conexion SQl SERVER
 		ConexionSqlServer conexion = ConexionSqlServer.getInstance()
 		conexion.obtenerConexion()
 
+	
+
 		// Constuye el archivo de configuración .properties que contiene las configuraciones para el envio de requerimientos de pagos con tarjeta.
 		ArchivoProperties p = new ArchivoProperties()
 		p.oCnn = conexion
-	    p.construir()
-		//  return 
-    
+		p.construir()
+		 
+		
+		// Limpieza de colas en espera.
+		ColaProcesos oColaP =  ColaProcesos.getInstance()
+		oColaP.oCnn = conexion
+		oColaP.limpiarCola(false)
+		// Fin Limpieza de colas en espera.
+
+		
+
+		cantidadConsultasParaLiberarMemoria=Integer.parseInt( Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  Constantes.tiempoInactividadParaLimpiar))
+		cantidadConsultasParaLiberarMemoriaTemp =cantidadConsultasParaLiberarMemoria
+
 		def speed=   Propiedades.get(Constantes.ARCHIVO_CONFIGURACION_DINAMIC,  Constantes.TIMER_LOOP_APP)
 		int sTiempo = Integer.parseInt(speed)
 		Main  principal	 = new Main ()
@@ -54,14 +64,24 @@ public class Main {
 
 		garbage.gc()
 		System.out.println("Memoria Liberada:  "+ garbage.freeMemory() );
-	     println "Servicio Iniciado.."
+		println "Servicio Iniciado, en espera de transacciones."
+ 
+
 		while (true)
 		{
-			if (p.verificar() == 1)
-				p.construir()
+			try {
+				if (p.verificar() == 1)
+					p.construir()
+			} catch (Exception e) {
+				p.oCnn = null
+				garbage.gc()
+			}
 
 			principal.Ejecutardemonio()
 			Thread.sleep(sTiempo)
+
+			cantidadConsultasParaLiberarMemoriaTemp --
+
 		}
 	}
 
